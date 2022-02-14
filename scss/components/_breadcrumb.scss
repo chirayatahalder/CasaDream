@@ -1,0 +1,24 @@
+.cd_breadcrumb {
+    background-color: $black;
+    padding: 100px 0;
+    margin-top: 150px;
+    h1 {
+        color: $white;
+    }
+    a {
+        font-size: 24px !important;
+        &:hover {
+            color: $yellow;
+        }
+    }
+    .current {
+        color: $dark-yellow;
+        margin-left: 20px;
+    }
+    .dash {
+        background-color: $white;
+        width: 100px;
+        height: 2px;
+        margin: 0 10px;
+    }
+}

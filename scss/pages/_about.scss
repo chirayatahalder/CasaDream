@@ -1,0 +1,50 @@
+// importing the header
+@import "../layout/header";
+
+#cd_about_header {
+    .cd_about_breadcrumb {
+        @extend .cd_breadcrumb;
+    }
+    .cd_header_image {
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+        }
+    }
+}
+
+#cd_about_few_words {
+    margin-top: 100px;
+    p {
+        padding-right: 40px;
+    }
+    h4 {
+        color: $yellow;
+        font-family: "heading-font";
+        margin-top: 50px;
+    }
+    ul {
+        li {
+            font-size: 22px;
+            color: $white;
+            list-style-type: none;
+        }
+    }
+}
+
+#cd_about_client {
+    margin-top: 100px;
+    img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+}
+#cd_about_why {
+    margin-top: 100px;
+    i {
+        color: $yellow;
+        font-size: 24px !important;
+    }
+}

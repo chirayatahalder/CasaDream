@@ -1,0 +1,23 @@
+footer {
+  margin-top: 100px;
+  padding: 100px 0;
+  background-color: #342f28;
+  p {
+    font-size: 24px;
+    @include lg {
+      font-size: 20px;
+    }
+  }
+  h5 {
+    @include lg {
+      font-size: 20px;
+    }
+  }
+  .navbar-brand {
+    width: 250px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

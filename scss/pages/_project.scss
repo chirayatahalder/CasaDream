@@ -1,0 +1,40 @@
+// importing the header
+@import "../layout/header";
+
+#cd_project {
+    .cd_project_breadcrumb {
+        @extend .cd_breadcrumb;
+    }
+    .project-heading {
+        margin-top: 200px;
+        h1 {
+            color: #fff;
+        }
+    }
+    #cd_project_gallery {
+        margin-top: 100px;
+        .project-item {
+            margin-top: 100px;
+            .project-item-img-1 {
+                background-image: url("../img/project1.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 600px;
+                a {
+                    position: absolute;
+                    bottom: 3%;
+                    right: 3%;
+                }
+            }
+            .project-item-img-2 {
+                @extend .project-item-img-1;
+                background-image: url("../img/project2.jpg");
+            }
+            .project-item-img-3 {
+                @extend .project-item-img-1;
+                background-image: url("../img/project3.jpg");
+            }
+        }
+    }
+}

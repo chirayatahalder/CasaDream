@@ -1,0 +1,153 @@
+// header import
+@import "../layout/header";
+
+#cd_collection {
+    .cd_collection_breadcrumb {
+        @extend .cd_breadcrumb;
+    }
+
+    .header-slider {
+        margin-top: 150px;
+        @include sm {
+            margin-top: 100px;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.322);
+            padding: 250px 0;
+            @include sm {
+                padding: 150px 0;
+            }
+        }
+        .slider1 {
+            background-image: url("../img/header-slider-1.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h1 {
+                color: $white;
+                margin: 0;
+            }
+            p {
+                font-size: 30px;
+                @include sm {
+                    font-size: 24px;
+                }
+            }
+        }
+        .slider2 {
+            @extend .slider1;
+            background-image: url("../img/header-slider-2.jpg");
+        }
+        .slider3 {
+            @extend .slider1;
+            background-image: url("../img/header-slider-3.jpg");
+        }
+    }
+
+    #cd_collection_area {
+        margin-top: 100px;
+        @include sm {
+            margin-top: 20px;
+        }
+        .categories {
+            background-color: $black;
+            padding: 20px;
+            hr {
+                color: $white;
+            }
+            h4 {
+                color: $white;
+                font-family: "heading-font";
+            }
+            p {
+                margin: 10px 0;
+                a {
+                    font-size: 22px !important;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+                .number {
+                    color: $yellow;
+                }
+            }
+        }
+        .best-seller {
+            background-color: $black;
+            padding: 20px;
+            margin-top: 40px;
+            h4 {
+                color: $white;
+                font-family: "heading-font";
+            }
+            .best-seller-item {
+                display: flex;
+                .best-seller-item-img {
+                    width: 60px;
+                    height: 80px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .best-seller-item-content {
+                    margin-left: 20px;
+                    .name {
+                        a {
+                            font-size: 22px !important;
+                        }
+                        margin: 0;
+                    }
+                    .price {
+                        font-size: 22px;
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+        .tags {
+            background-color: $black;
+            padding: 20px;
+            margin-top: 40px;
+            h4 {
+                color: $white;
+                font-family: "heading-font";
+            }
+            a {
+                font-size: 20px !important;
+                transition: 0.2s all;
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+        .follow-us {
+            @extend .tags;
+        }
+    }
+
+    .product {
+        margin-top: 30px;
+        padding: 10px;
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                color: $white;
+                font-size: 20px !important;
+                margin-top: 10px;
+            }
+            p {
+                font-size: 22px;
+                color: $yellow;
+            }
+        }
+    }
+}

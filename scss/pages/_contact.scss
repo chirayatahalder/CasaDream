@@ -1,0 +1,14 @@
+// importing the header
+@import "../layout/header";
+#cd_contact {
+  .cd_contact_breadcrumb {
+    @extend .cd_breadcrumb;
+  }
+
+  #cd_contact_address {
+    margin-top: 200px;
+    a {
+      font-size: 26px !important;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// header import
+@import "../layout/header";
+
+#cd_blog {
+  .cd_blog_breadcrumb {
+    @extend .cd_breadcrumb;
+  }
+}
