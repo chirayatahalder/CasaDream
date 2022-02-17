@@ -15,8 +15,11 @@
         margin-top: 100px;
         .project-item {
             margin-top: 100px;
+            h3{
+                font-family: "heading-font-1";
+            }
             .project-item-img-1 {
-                background-image: url("../img/project1.jpg");
+                background-image: url("../img/residence1/WG_08013-HDR.jpg");
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -29,11 +32,15 @@
             }
             .project-item-img-2 {
                 @extend .project-item-img-1;
-                background-image: url("../img/project2.jpg");
+                background-image: url("../img/residence2/DSC_0266-Edit.jpg");
             }
             .project-item-img-3 {
                 @extend .project-item-img-1;
-                background-image: url("../img/project3.jpg");
+                background-image: url("../img/residence3/17.jpg");
+            }
+            .project-item-img-4 {
+                @extend .project-item-img-1;
+                background-image: url("../img/residence4/WG_01346.jpg");
             }
         }
     }

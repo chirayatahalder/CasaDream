@@ -70,11 +70,12 @@ nav {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 85vh;
+            height: 110vh;
             color: $white;
 
             h1 {
                 margin-bottom: 50px;
+                font-family: "heading-font-1";
             }
         }
     }

@@ -14,6 +14,9 @@
         .overlay {
             background-color: rgba(0, 0, 0, 0.322);
             padding: 250px 0;
+            .content{
+                text-align: center;
+            }
             @include sm {
                 padding: 150px 0;
             }
@@ -45,6 +48,9 @@
         }
     }
 
+    h3{
+        font-family: "heading-font-1";
+    }
     #cd_collection_area {
         margin-top: 100px;
         @include sm {
@@ -132,8 +138,9 @@
         padding: 10px;
         img {
             width: 100%;
-            height: auto;
-            max-height: 600px;
+            height: 300px;
+            max-height: 300px; //chira
+            object-fit: cover;
         }
         .product-info {
             display: flex;
@@ -147,6 +154,47 @@
             p {
                 font-size: 22px;
                 color: $yellow;
+            }
+        }
+    }
+    #cd_project_gallery {
+        margin-top: 100px;
+        .project-item {
+            margin-top: 100px;
+            .project-item-img-1 {
+                background-image: url("../img/project1.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 600px;
+                a {
+                    position: absolute;
+                    bottom: 3%;
+                    right: 3%;
+                }
+            }
+            .project-item-img-2 {
+                @extend .project-item-img-1;
+                background-image: url("../img/project2.jpg");
+            }
+            .project-item-img-3 {
+                @extend .project-item-img-1;
+                background-image: url("../img/project3.jpg");
+            }
+            .collection-img{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                .collection-img-item{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 48%;
+                    max-width: 48%;
+                    img{
+                        margin: 12px;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }

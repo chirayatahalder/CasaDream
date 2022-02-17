@@ -4,6 +4,9 @@
 #cd_home_new {
     position: relative;
     margin-top: 100px;
+    h3{
+        font-family: "heading-font-1";
+    }
 
     @include sm {
         margin-top: 50px;
@@ -42,6 +45,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
+        border: 5px solid #fff;
+        h3{
+            font-family: "heading-font-1";
+        }
     }
     .now_poster {
         @extend .sale_poster;
@@ -81,14 +88,29 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: 100px 0;
+        h3{
+            font-family: "heading-font-1";
+        }
     }
     .collections {
         img {
             width: 100%;
-            height: auto;
+            height: 500px;
+            object-fit: cover;
         }
         p {
             font-size: 18px;
+            .btn-custom-1{
+                background-image: -webkit-gradient(linear, left top, right top, from(#cb8b1b), to(#eab83b));
+                background-image: linear-gradient(to right, #cb8b1b, #eab83b);
+                padding: 20px 50px;
+                border-radius: 50px;
+                font-family: "heading-font";
+                font-size: 14px !important;
+                color: #000;
+                letter-spacing: 1.8px;
+                padding: 10px 25px !important;
+            }
         }
     }
 }
@@ -137,15 +159,19 @@
     }
 }
 #cd_home_video {
-    margin-top: 100px;
-    background-image: url("../img/video-back.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 200px 0;
+    margin-top: 10px;
+    // background-image: url("../img/video-back.png");
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    padding: 40px 0px 200px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    iframe{
+        width: 100%;
+        height: 600px;
+    }
     .play {
         display: flex;
         justify-content: center;
@@ -154,6 +180,7 @@
         height: 120px;
         border: 1px solid #ffffff;
         border-radius: 50%;
+        
     }
     a {
         font-size: 26px;
@@ -164,6 +191,7 @@
     position: relative;
     h3 {
         margin-top: 100px;
+        font-family: "heading-font-1";
     }
     h2 {
         font-size: 45px;
@@ -184,10 +212,11 @@
 }
 #cd_home_new_2 {
     margin-top: 100px;
-    background-image: url("../img/new-2-back.png");
+    // background-image: url("../img/sofa/sofa-k66.jpg");
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/sofa/sofa-k66.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 250px 0;
     text-align: right;
     @include sm {
@@ -195,6 +224,9 @@
     }
     h2 {
         color: $white;
+    }
+    h3{
+        font-family: "heading-font-1";
     }
 }
 #cd_home_colors {
@@ -215,6 +247,9 @@
         width: 100%;
         height: auto;
     }
+    h3{
+        font-family: "heading-font-1";
+    }
 }
 #cd_home_words {
     img {
@@ -234,6 +269,7 @@
         }
         h3 {
             color: $black;
+            font-family: "heading-font-1";
         }
         p {
             color: $black;
@@ -250,6 +286,16 @@
 }
 #cd_home_contact {
     margin-top: 100px;
+    h3{
+        font-family: "heading-font-1";
+    }
+}
+
+.col-lg-3{
+    h3{
+        font-family: "heading-font-1";
+    }
 }
 // importing the footer
 @import "../layout/footer";
+
