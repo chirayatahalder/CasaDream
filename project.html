@@ -1,335 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Casa Dream</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-            integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-            integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <section id="cd_project">
-            <div id="cd_project_header">
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="./img/CD_White_logo.png" alt="CD Logo" />
-                    </a>
 
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarToggle"
-                        aria-controls="navbarToggle"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between p-4" id="navbarToggle">
-                        <ul class="navbar-nav m-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">ABOUTUS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./collection.html">COLLECTION</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./project.html">PROJECT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Dream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 
-                <!-- navigaion end here -->
-            </div>
-            <div class="container text-center project-heading">
-                <h1 data-aos="fade-up" data-aos-duration="1000">Our Projects</h1>
-            </div>
-            <!-- header end -->
-            <div id="cd_project_gallery">
-                <div class="popup-gallery">
-                    <div class="container">
-                        <div class="project-item">
-                            <div class="row">
-                                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                    <h2>Lorem ipsum dolor sit amet.</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
-                                        Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
-                                    </p>
-                                </div>
-                                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                    <h3>Lorem ipsum dolor.</h3>
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente ullam asperiores, nesciunt
-                                        aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum adipisci inventore
-                                        voluptatum.
-                                    </h5>
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente ullam asperiores, nesciunt
-                                        aliquam animi inventore sed molestias, vitae veniam.
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="project-item-img-1">
-                                    <a href="./img/project1.jpg" class="btn-custom btn">VIEW PROJECT</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="row">
-                                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                    <h2>Lorem ipsum dolor sit amet.</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
-                                        Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
-                                    </p>
-                                </div>
-                                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                    <h3>Lorem ipsum dolor.</h3>
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente ullam asperiores, nesciunt
-                                        aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum adipisci inventore
-                                        voluptatum.
-                                    </h5>
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente ullam asperiores, nesciunt
-                                        aliquam animi inventore sed molestias, vitae veniam.
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="project-item-img-2">
-                                    <a href="./img/project1.jpg" class="btn-custom btn">VIEW PROJECT</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container text-center project-heading">
-                <h1 data-aos="fade-up" data-aos-duration="1000">Our Collection</h1>
-            </div>
-            <!-- header end -->
-            <div id="cd_project_gallery">
-                <div class="popup-gallery">
-                    <div class="container">
-                        <div class="project-item">
-                            <div class="row">
-                                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                    <h2>Lorem ipsum dolor sit amet.</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
-                                        Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
-                                    </p>
-                                </div>
-                                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                                    <h3>Lorem ipsum dolor.</h3>
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente ullam asperiores, nesciunt
-                                        aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum adipisci inventore
-                                        voluptatum.
-                                    </h5>
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente ullam asperiores, nesciunt
-                                        aliquam animi inventore sed molestias, vitae veniam.
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="project-item-img-3">
-                                    <a href="./img/project3.jpg" class="btn-custom btn">VIEW PROJECT</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body>
+    <section id="cd_project">
+        <div id="cd_project_header">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/CD_White_logo.png" alt="CD Logo" />
+                </a>
 
-            <div id="cd_home_contact">
-                <div class="container text-center">
-                    <h2 data-aos="fade-up" data-aos-duration="1000">
-                        FEEL FREE TO <br />
-                        REACH OUT TO <br />
-                        US ANYTIME
-                    </h2>
-                    <h3 data-aos="fade-up" data-aos-duration="1200">Contact</h3>
-                    <p data-aos="fade-up" data-aos-duration="1500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elitse do eiusmod tempor incididunt ut labore et dolore magnta liquia.
-                        <br />
-                        Utenimadm inim veniam, quis nostrud exercitation ullamco la borisnisi ut aliquipex ea com modo conseqat.
-                    </p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between p-4" id="navbarToggle">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">ABOUTUS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./category.html">CATEGORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./project.html">PROJECT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
-                                <label for="exampleInputEmail1">First Name</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
-                                <label for="exampleInputEmail1">Last Name</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group" data-aos="fade-up" data-aos-duration="1500">
-                                <label for="exampleInputEmail1">E-mail address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group" data-aos="fade-up" data-aos-duration="1800">
-                                <label for="exampleInputEmail1">Phone</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                            </div>
-                        </div>
-                        <div class="col-lg-12 mt-2">
-                            <div class="form-group" data-aos="fade-up" data-aos-duration="2000">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- contact end -->
-            <footer>
+            </nav>
+
+            <!-- navigaion end here -->
+        </div>
+        <div class="container text-center project-heading">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Our Projects</h1>
+        </div>
+        <!-- header end -->
+        <div id="cd_project_gallery">
+            <div class="popup-gallery">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                            <a class="navbar-brand" href="#"><img src="./img/CD_White_logo.png" alt="CD Logo" load="lazy" /></a>
-                            <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.</p>
-                            <div class="d-flex justify-content-between">
-                                <h5>INSTAGRAM</h5>
-                                <h5>FACEBOOK</h5>
-                                <h5>LINKDIN</h5>
+                    <div class="project-item">
+                        <div class="row">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h2>Residence 1</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+                                    Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
+                                </p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h3>Lorem ipsum dolor.</h3>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum
+                                    adipisci inventore
+                                    voluptatum.
+                                </h5>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam.
+                                </h5>
                             </div>
                         </div>
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
-                            <h3>Designers</h3>
-                            <p>Ivana Kostadinova</p>
-                            <p>Italymobile</p>
-                            <p>Sweden Int</p>
-                            <p>Arch. France</p>
-                        </div>
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
-                            <h3>Faq</h3>
-                            <p>When can I visit your studio?</p>
-                            <p>How long does shipping take?</p>
-                            <p>Where can I find your catalog?</p>
-                            <p>How long does shipping take?</p>
-                        </div>
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1800">
-                            <h3>Subscribe</h3>
-                            <div class="form-group mb-5">
-                                <label for="exampleFormControlInput1">E-mail</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" />
-                                <small>* Get all the latest offers & info</small>
+                        <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="project-item-img-1">
+                                <a href="./img/residence1/WG_08013-HDR.jpg" class="btn-custom btn">VIEW PROJECT</a>
+                                <a href="./img/residence1/WG_07859-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_07869-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_07885.jpg" class=""></a>
+                                <a href="./img/residence1/WG_07898-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08006.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08010-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08013-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08025-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08031-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08055-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08065-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08065-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08069-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08074-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08087-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08109.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08111-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08118.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08117.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08119-HDR.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08118.jpg" class=""></a>
+                                <a href="./img/residence1/WG_08138-HDR.jpg" class=""></a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cd_project_gallery">
+            <div class="popup-gallery-1">
+                <div class="container">
+                    <div class="project-item">
+                        <div class="row">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h2>Residence 2</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+                                    Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
+                                </p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h3>Lorem ipsum dolor.</h3>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum
+                                    adipisci inventore
+                                    voluptatum.
+                                </h5>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="project-item-img-2">
+                                <a href="./img/residence2/DSC_0266-Edit.jpg" class="btn-custom btn">VIEW PROJECT</a>
+                                <a href="./img/residence2/DSC_0065-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0075-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0120-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0160-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0185-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0193-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0197.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0202-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0216-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0266-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0274-HDR-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0288-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0316-HDR-Edit-2.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0354.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0360-HDR-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0393-HDR-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0406-Edit.jpg" class=""></a>
+                                <a href="./img/residence2/DSC_0464-Edit.jpg" class=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cd_project_gallery">
+            <div class="popup-gallery-2">
+                <div class="container">
+                    <div class="project-item">
+                        <div class="row">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h2>Residence 3</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+                                    Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
+                                </p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h3>Lorem ipsum dolor.</h3>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum
+                                    adipisci inventore
+                                    voluptatum.
+                                </h5>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="project-item-img-3">
+                                <a href="./img/residence3/17.jpg" class="btn-custom btn">VIEW PROJECT</a>
+                                <a href="./img/residence3/2.jpg" class=""></a>
+                                <a href="./img/residence3/3.jpg" class=""></a>
+                                <a href="./img/residence3/4.jpg" class=""></a>
+                                <a href="./img/residence3/5.jpg" class=""></a>
+                                <a href="./img/residence3/7.jpg" class=""></a>
+                                <a href="./img/residence3/14.jpg" class=""></a>
+                                <a href="./img/residence3/16.jpg class=""></a>
+                                <a href="./img/residence3/IMG_0006-Edit.jpg" class=""></a>
+                                <a href="./img/residence3/IMG_0008-Edit.jpg" class=""></a>
+                                <a href="./img/residence3/IMG_0090-Edit.jpg" class=""></a>
+                                <a href="./img/residence3/IMG_0093-Edit.jpg" class=""></a>
+                                <a href="./img/residence3/IMG_0094-Edit.jpg" class=""></a>
+                                <a href="./img/residence3/IMG_0105-Edit.jpg" class=""></a>
+                                <a href="./img/residence3/IMG_9981-Edit.jpg" class=""></a>
+                                <a href="./img/residence3/IMG_9983.jpg" class=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cd_project_gallery">
+            <div class="popup-gallery-3">
+                <div class="container">
+                    <div class="project-item">
+                        <div class="row">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h2>Residence 4</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+                                    Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
+                                </p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h3>Lorem ipsum dolor.</h3>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum
+                                    adipisci inventore
+                                    voluptatum.
+                                </h5>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="project-item-img-4">
+                                <a href="./img/residence4/WG_01346.jpg" class="btn-custom btn">VIEW PROJECT</a>
+                                <a href="./img/residence4/WG_01321-HDR-Edit.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01329.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01334-Edit.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01332.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01335.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01337.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01339.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01342.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01343.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01345.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01347.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01350.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01357.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01360.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01361.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01364-Edit.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01367-Edit.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01368.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01374.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01375.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01376.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01382.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01402.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01405.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01414.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01421.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01422-Edit.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01424.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01428.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01433.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01435.jpg" class=""></a>
+                                <a href="./img/residence4/WG_01436.jpg" class=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container text-center project-heading" style="display: none;">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Our Collection</h1>
+        </div>
+        <!-- header end -->
+        <div id="cd_project_gallery" style="display: none;">
+            <div class="popup-gallery-99">
+                <div class="container">
+                    <div class="project-item">
+                        <div class="row">
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+                                    Esse explicabo sapiente ullam asperiores, nesciunt aliquam.
+                                </p>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                                <h3>Lorem ipsum dolor.</h3>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam, dicta nisi amet atque aut. Cum
+                                    adipisci inventore
+                                    voluptatum.
+                                </h5>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo sapiente
+                                    ullam asperiores, nesciunt
+                                    aliquam animi inventore sed molestias, vitae veniam.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="project-item-img-99">
+                                <a href="./img/project3.jpg" class="btn-custom btn">VIEW PROJECT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cd_home_contact">
+            <div class="container text-center">
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                    FEEL FREE TO <br />
+                    REACH OUT TO <br />
+                    US ANYTIME
+                </h2>
+                <h3 data-aos="fade-up" data-aos-duration="1200">Contact</h3>
+                <p data-aos="fade-up" data-aos-duration="1500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elitse do eiusmod tempor incididunt ut labore et
+                    dolore magnta liquia.
+                    <br />
+                    Utenimadm inim veniam, quis nostrud exercitation ullamco la borisnisi ut aliquipex ea com modo
+                    conseqat.
+                </p>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
+                            <label for="exampleInputEmail1">First Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
+                            <label for="exampleInputEmail1">Last Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1500">
+                            <label for="exampleInputEmail1">E-mail address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1800">
+                            <label for="exampleInputEmail1">Phone</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-2">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="2000">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-5 text-center">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="2500">
                             <a href="" class="btn-custom">SUBMIT</a>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- footer end  -->
-        </section>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"
-            integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-            integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-            integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.min.js"
-            integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
+            </div>
+        </div>
+        <!-- contact end -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                        <a class="navbar-brand" href="#"><img src="./img/CD_White_logo.png" alt="CD Logo"
+                                load="lazy" /></a>
+                        <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <h5>INSTAGRAM</h5>
+                            <h5>FACEBOOK</h5>
+                            <h5>LINKDIN</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                        <h3>Designers</h3>
+                        <p>Ivana Kostadinova</p>
+                        <p>Italymobile</p>
+                        <p>Sweden Int</p>
+                        <p>Arch. France</p>
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                        <h3>Faq</h3>
+                        <p>When can I visit your studio?</p>
+                        <p>How long does shipping take?</p>
+                        <p>Where can I find your catalog?</p>
+                        <p>How long does shipping take?</p>
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1800">
+                        <h3>Subscribe</h3>
+                        <div class="form-group mb-5">
+                            <label for="exampleFormControlInput1">E-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" />
+                            <small>* Get all the latest offers & info</small>
+                        </div>
+                        <a href="" class="btn-custom">SUBMIT</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end  -->
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+        integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.min.js"
+        integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
 
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(window).scrollTop() > 50) {
-                        $("nav").css("background-color", "#000");
-                    }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").css("background-color", "#000");
+                }
 
-                    if ($(window).scrollTop() < 51) {
-                        $("nav").css("background-color", "transparent");
-                    }
-                });
+                if ($(window).scrollTop() < 51) {
+                    $("nav").css("background-color", "transparent");
+                }
             });
-        </script>
-        <script>
-            $(document).ready(function () {
-                $(".popup-gallery").magnificPopup({
-                    delegate: "a",
-                    type: "image",
-                    tLoading: "Loading image #%curr%...",
-                    mainClass: "mfp-img-mobile",
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-gallery").magnificPopup({
+                delegate: "a",
+                type: "image",
+                tLoading: "Loading image #%curr%...",
+                mainClass: "mfp-img-mobile",
 
-                    gallery: {
-                        enabled: true,
-                        navigateByImgClick: true,
-                        preload: [0, 1],
-                    },
-                    image: {
-                        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                    },
-                });
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1],
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                },
             });
-        </script>
-    </body>
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-gallery-1").magnificPopup({
+                delegate: "a",
+                type: "image",
+                tLoading: "Loading image #%curr%...",
+                mainClass: "mfp-img-mobile",
+
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1],
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                },
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-gallery-2").magnificPopup({
+                delegate: "a",
+                type: "image",
+                tLoading: "Loading image #%curr%...",
+                mainClass: "mfp-img-mobile",
+
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1],
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                },
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-gallery-3").magnificPopup({
+                delegate: "a",
+                type: "image",
+                tLoading: "Loading image #%curr%...",
+                mainClass: "mfp-img-mobile",
+
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1],
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                },
+            });
+        });
+    </script>
+</body>
+
 </html>
