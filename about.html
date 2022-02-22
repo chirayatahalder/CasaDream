@@ -23,6 +23,13 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+    
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+    
+        </div>
         <section id="cd_about">
             <div id="cd_about_header">
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -94,17 +101,18 @@
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             </p>
                         </div>
-                        <div class="col-lg-3">
-                            <h4 data-aos="fade-up" data-aos-duration="1000">AWARDS</h4>
+                        <div class="col-lg-6">
+                            <img src="./img/about-about.png" class="img-fluid" alt="" />
+                            <!-- <h4 data-aos="fade-up" data-aos-duration="1000">AWARDS</h4>
                             <ul data-aos="fade-up" data-aos-duration="1200">
                                 <li>- Lorem ipsum dolor, Italy 2020</li>
                                 <li>- Lorem ipsum dolor, Italy 2020</li>
                                 <li>- Ut enim adni, Cape Town 2019</li>
                                 <li>- Tempor incint ut, Rome 2019</li>
                                 <li>- Labore et dolagna, Tokio 2018</li>
-                            </ul>
+                            </ul> -->
                         </div>
-                        <div class="col-lg-3">
+                        <!-- <div class="col-lg-3">
                             <h4 data-aos="fade-up" data-aos-duration="1000">RECOGNITIONS</h4>
                             <ul data-aos="fade-up" data-aos-duration="1200">
                                 <li>- Lorem ipsum dolor, Italy 2020</li>
@@ -113,7 +121,7 @@
                                 <li>- Tempor incint ut, Rome 2019</li>
                                 <li>- Labore et dolagna, Tokio 2018</li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -306,29 +314,45 @@
             <footer>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                            <a class="navbar-brand" href="#"><img src="./img/CD_White_logo.png" alt="CD Logo" load="lazy" /></a>
-                            <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.</p>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                            <a class="navbar-brand" href="#"><img src="./img/CD_White_logo.png" alt="CD Logo"
+                                    load="lazy" /></a>
+                            <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.
+                            </p>
                             <div class="d-flex justify-content-between">
                                 <h5>INSTAGRAM</h5>
                                 <h5>FACEBOOK</h5>
                                 <h5>LINKDIN</h5>
                             </div>
                         </div>
+                        <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1200"></div>
                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
-                            <h3>Designers</h3>
-                            <p>Ivana Kostadinova</p>
-                            <p>Italymobile</p>
-                            <p>Sweden Int</p>
-                            <p>Arch. France</p>
+                            <h3>Quick Links</h3>
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./category.html">CATEGORY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./project.html">PROJECT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                        <!-- <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
                             <h3>Faq</h3>
                             <p>When can I visit your studio?</p>
                             <p>How long does shipping take?</p>
                             <p>Where can I find your catalog?</p>
                             <p>How long does shipping take?</p>
-                        </div>
+                        </div> -->
                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1800">
                             <h3>Subscribe</h3>
                             <div class="form-group mb-5">
@@ -371,17 +395,42 @@
         <script>
             AOS.init();
 
+            // $(document).ready(function () {
+            //     $(window).scroll(function () {
+            //         console.log($(window).scrollTop());
+
+            //         if ($(window).scrollTop() > 50) {
+            //             $("nav").css("background-color", "#000");
+            //         }
+
+            //         if ($(window).scrollTop() < 51) {
+            //             $("nav").css("background-color", "transparent");
+            //         }
+            //     });
+            // });
             $(document).ready(function () {
-                $(window).scroll(function () {
-                    console.log($(window).scrollTop());
+            $(window).scroll(function () {
+                // console.log($(window).scrollTop());
 
-                    if ($(window).scrollTop() > 50) {
-                        $("nav").css("background-color", "#000");
-                    }
+                if ($(window).scrollTop() > 50) {
+                    $("nav").css("background-color", "#000");
+                    $("nav").css("height", "80px");
+                    $("nav>a").css("display", "none");
+                    $("#navbarToggle").css("margin-top", "0px");
+                }
 
-                    if ($(window).scrollTop() < 51) {
-                        $("nav").css("background-color", "transparent");
+                if ($(window).scrollTop() < 51) {
+                    $("nav").css("background-color", "transparent");
+                    $("nav").css("height", "auto");
+                    $("nav>a").css("display", "block");
+                    $("#navbarToggle").css("margin-top", "70px");
                     }
+                });
+            });
+            $(window).on('load', function () {
+         // Fakes the loading setting a timeout
+                setTimeout(function () {
+                    $('body').addClass('loaded');
                 });
             });
         </script>

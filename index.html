@@ -14,9 +14,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <section id="cd_home">
         <div id="cd_home_header">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -78,14 +87,14 @@
                                 liquia. Utenimadm inim veniam, quis nostrud exercitation ullamco la borisnisi ut
                                 aliquipex ea com modo conseqat.
                             </p>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./about.html" class="btn-custom">DISCOVER</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="new_content-img" data-aos="fade-up" data-aos-duration="1500">
-                            <img src="./img/WG_08118.jpg" alt="New_content_image" load="lazy" />
+                            <img src="./img/home-about.png" alt="New_content_image" load="lazy" class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -98,8 +107,8 @@
                     <div class="col-lg-6 p-0">
                         <div class="sale_poster">
                             <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Sofas</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./sofas.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
@@ -107,56 +116,56 @@
                     <div class="col-lg-6 p-0">
                         <div class="now_poster">
                             <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Arm Chair</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./arm-chair.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 p-0">
                         <div class="sale_new_poster">
                             <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Kitchen</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./kitchen.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 p-0">
                         <div class="now_new_poster">
                             <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Wardrobe</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./kitchen.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 p-0">
                         <div class="sale_new_poster_1">
-                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Wall Planning</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Wall Panelling</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./wall-planning.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 p-0">
                         <div class="now_new_poster_1">
                             <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Furnishing</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./furnishing.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 p-0">
                         <div class="sale_new_poster_2">
                             <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Decor</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./decor.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 p-0">
                         <div class="now_new_poster_2">
-                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Offline / Outdoor</h3>
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-border">DISCOVER</a>
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Outdoor</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./outdoor.html" class="btn-custom-border">DISCOVER</a>
                             </p>
                         </div>
                     </div>
@@ -182,8 +191,8 @@
                                 data-aos-duration="1000" />
                             <h5 class="mt-3">RESIDENTIAL PROJECTS</h5>
                             <!-- <p>California Collection</p> -->
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-1">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./project.html" class="btn-custom-1">DISCOVER</a>
                             </p>
                         </div>
                         <div class="col-lg-4">
@@ -191,8 +200,8 @@
                                 data-aos-duration="1200" />
                             <h5 class="mt-3">RESIDENTIAL PROJECTS</h5>
                             <!-- <p>California Collection</p> -->
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-1">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./project.html" class="btn-custom-1">DISCOVER</a>
                             </p>
                         </div>
                         <div class="col-lg-4">
@@ -200,8 +209,8 @@
                                 data-aos-duration="1500" />
                             <h5 class="mt-3">RESIDENTIAL PROJECTS</h5>
                             <!-- <p>California Collection</p> -->
-                            <p data-aos="fade-up" data-aos-duration="1500">
-                                <a href="" class="btn-custom-1">DISCOVER</a>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./project.html" class="btn-custom-1">DISCOVER</a>
                             </p>
                         </div>
                     </div>
@@ -346,14 +355,14 @@
         <div id="cd_home_new_2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6"></div>
-                    <div class="col-lg-6">
-                        <h3 data-aos="fade-up" data-aos-duration="1000">New</h3>
-                        <h2 class="mb-5" data-aos="fade-up" data-aos-duration="1200">
-                            MADE WITH LOVE <br />
-                            AND DEDICATION
+                    <!-- <div class="col-lg-6"></div> -->
+                    <div class="col-lg-12">
+                        <!-- <h3 data-aos="fade-up" data-aos-duration="1000">New</h3> -->
+                        <h2 class="mb-5 text-center" data-aos="fade-up" data-aos-duration="1200">
+                            Made with Love <br />
+                            and Dedication
                         </h2>
-                        <p data-aos="fade-up" data-aos-duration="1500">
+                        <p class="text-center" data-aos="fade-up" data-aos-duration="1000">
                             <a href="" class="btn-custom">DISCOVER</a>
                         </p>
                     </div>
@@ -376,9 +385,9 @@
                                 <br />
                                 semdo eiusmod tempor est.
                             </p>
-                            <p data-aos="fade-up" data-aos-duration="1800">
+                            <!-- <p data-aos="fade-up" data-aos-duration="1800">
                                 <a href="">READ MORE</a>
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -482,7 +491,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
                         <a class="navbar-brand" href="#"><img src="./img/CD_White_logo.png" alt="CD Logo"
                                 load="lazy" /></a>
                         <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.
@@ -493,20 +502,34 @@
                             <h5>LINKDIN</h5>
                         </div>
                     </div>
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1200"></div>
                     <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
-                        <h3>Designers</h3>
-                        <p>Ivana Kostadinova</p>
-                        <p>Italymobile</p>
-                        <p>Sweden Int</p>
-                        <p>Arch. France</p>
+                        <h3>Quick Links</h3>
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./category.html">CATEGORY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./project.html">PROJECT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">CONTACT</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                    <!-- <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
                         <h3>Faq</h3>
                         <p>When can I visit your studio?</p>
                         <p>How long does shipping take?</p>
                         <p>Where can I find your catalog?</p>
                         <p>How long does shipping take?</p>
-                    </div>
+                    </div> -->
                     <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1800">
                         <h3>Subscribe</h3>
                         <div class="form-group mb-5">
@@ -550,13 +573,31 @@
 
                 if ($(window).scrollTop() > 50) {
                     $("nav").css("background-color", "#000");
+                    $("nav").css("height", "80px");
+                    $("nav>a").css("display", "none");
+                    $("#navbarToggle").css("margin-top", "0px");
                 }
 
                 if ($(window).scrollTop() < 51) {
                     $("nav").css("background-color", "transparent");
+                    $("nav").css("height", "auto");
+                    $("nav>a").css("display", "block");
+                    $("#navbarToggle").css("margin-top", "70px");
                 }
             });
         });
+
+        // 
+        
+
+        $(window).on('load', function () {
+         // Fakes the loading setting a timeout
+            setTimeout(function () {
+                $('body').addClass('loaded');
+            });
+        });
+        
+        
     </script>
 </body>
 

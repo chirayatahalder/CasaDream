@@ -88,7 +88,7 @@
                         </div>
                         <div class="col-lg-12 mt-5 p-0" data-aos="fade-up" data-aos-duration="1000">
                             <div class="project-item-img-1">
-                                <a href="./img/residence1/WG_08013-HDR.jpg" class="btn-custom btn">VIEW PROJECT</a>
+                                <a href="./img/residence1/WG_08013-HDR.jpg" class="btn-custom btn img-responsive">VIEW PROJECT</a>
                                 <a href="./img/residence1/WG_07859-HDR.jpg" class=""></a>
                                 <a href="./img/residence1/WG_07869-HDR.jpg" class=""></a>
                                 <a href="./img/residence1/WG_07885.jpg" class=""></a>
@@ -405,7 +405,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
                         <a class="navbar-brand" href="#"><img src="./img/CD_White_logo.png" alt="CD Logo"
                                 load="lazy" /></a>
                         <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.
@@ -416,20 +416,34 @@
                             <h5>LINKDIN</h5>
                         </div>
                     </div>
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1200"></div>
                     <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
-                        <h3>Designers</h3>
-                        <p>Ivana Kostadinova</p>
-                        <p>Italymobile</p>
-                        <p>Sweden Int</p>
-                        <p>Arch. France</p>
+                        <h3>Quick Links</h3>
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./category.html">CATEGORY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./project.html">PROJECT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">CONTACT</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                    <!-- <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
                         <h3>Faq</h3>
                         <p>When can I visit your studio?</p>
                         <p>How long does shipping take?</p>
                         <p>Where can I find your catalog?</p>
                         <p>How long does shipping take?</p>
-                    </div>
+                    </div> -->
                     <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1800">
                         <h3>Subscribe</h3>
                         <div class="form-group mb-5">
@@ -465,15 +479,23 @@
 
         $(document).ready(function () {
             $(window).scroll(function () {
+                // console.log($(window).scrollTop());
+
                 if ($(window).scrollTop() > 50) {
                     $("nav").css("background-color", "#000");
+                    $("nav").css("height", "80px");
+                    $("nav>a").css("display", "none");
+                    $("#navbarToggle").css("margin-top", "0px");
                 }
 
                 if ($(window).scrollTop() < 51) {
                     $("nav").css("background-color", "transparent");
-                }
+                    $("nav").css("height", "auto");
+                    $("nav>a").css("display", "block");
+                    $("#navbarToggle").css("margin-top", "70px");
+                    }
+                });
             });
-        });
     </script>
     <script>
         $(document).ready(function () {
