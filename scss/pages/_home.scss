@@ -40,7 +40,7 @@
     }
     .sale_poster {
         padding: 250px 0;
-        background-image: url("../img/sale.png");
+        background-image: url("../img/sofa/home-sofa.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -52,7 +52,7 @@
     }
     .now_poster {
         @extend .sale_poster;
-        background-image: url("../img/now.png");
+        background-image: url("../img/arm-chair/DSC08831.jpg");
     }
     .sale_new_poster {
         @extend .sale_poster;
@@ -64,19 +64,19 @@
     }
     .sale_new_poster_1 {
         @extend .sale_poster;
-        background-image: url("../img/new-sale.png");
+        background-image: url("../img/wall-planning/B.jpg");
     }
     .now_new_poster_1 {
         @extend .sale_poster;
-        background-image: url("../img/now-new.png");
+        background-image: url("../img/furnishing/210927-UTM-01.jpg");
     }
     .sale_new_poster_2 {
         @extend .sale_poster;
-        background-image: url("../img/new-sale.png");
+        background-image: url("../img/decor/WG_01345.jpg");
     }
     .now_new_poster_2 {
         @extend .sale_poster;
-        background-image: url("../img/now-new.png");
+        background-image: url("../img/outdoor/outdoor-1.jpg");
     }
 }
 
@@ -224,9 +224,24 @@
     }
     h2 {
         color: $white;
+        font-family: "heading-font-1";
     }
     h3{
         font-family: "heading-font-1";
+    }
+}
+footer{
+    .navbar-nav{
+        .nav-item {
+            
+        
+            .nav-link {
+        
+                &:hover {
+                    color: $yellow !important;
+                }
+            }
+        }    
     }
 }
 #cd_home_colors {
@@ -299,3 +314,19 @@
 // importing the footer
 @import "../layout/footer";
 
+@media only screen and (max-width: 426px) {
+    .cd_home_process h5{
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 426px) {
+    #cd_home {
+        #cd_home_header {
+            nav{
+                button[aria-expanded="true"]{
+                    margin: 12px 0px 0px;
+                }
+    }
+}
+    }
+}

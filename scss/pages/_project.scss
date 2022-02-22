@@ -45,3 +45,34 @@
         }
     }
 }
+@media only screen and (max-width: 426px) {
+    #cd_project #cd_project_gallery .project-item .project-item-img-1, 
+    #cd_project #cd_project_gallery .project-item .project-item-img-4, 
+    #cd_project #cd_project_gallery .project-item .project-item-img-3, 
+    #cd_project #cd_project_gallery .project-item .project-item-img-2 {
+        height: 200px !important;
+    }
+    .btn-custom {
+        padding: 8px 13px !important;
+        font-size: 14px !important;
+    }
+    h5{
+        text-align: justify;
+    }
+
+}
+@media only screen and (max-width: 426px) {
+    #cd_project {
+        #cd_project_header {
+            nav{
+                button[aria-expanded="true"]{
+                    margin: 12px 0px 0px;
+                }
+                height: 80px !important;
+    }
+    nav>a{
+        display: block !important;
+    }
+}
+    }
+}

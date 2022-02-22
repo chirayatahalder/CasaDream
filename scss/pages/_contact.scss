@@ -13,5 +13,54 @@
     h3{
       font-family: "heading-font-1";
     }
+    .col-xs-6.col-sm-6 iframe{
+      width: 100%;
+    }
+  }
+}
+#cd_contact_header {
+  .cd_contact_breadcrumb {
+      @extend .cd_breadcrumb;
+  }
+  .cd_header_image {
+      img {
+          width: 100%;
+          height: auto;
+          max-height: 500px;
+          object-fit: cover;
+      }
+  }
+}
+@media only screen and (max-width: 426px) {
+    #cd_contact {
+        #cd_contact_header {
+            nav{
+                button[aria-expanded="true"]{
+                    margin: 12px 0px 0px;
+                }
+                height: 80px !important;
+    }
+    nav>a{
+        display: block !important;
+    }
+}
+    }
+
+  nav {
+    .navbar-brand.mid-nav {
+      img {
+          width: 100%;
+          height: auto;
+          max-width: 200px;
+          @include sm {
+              width: 180px !important;
+          }
+      }
+      position: absolute;
+      left: 50% !important;
+      transform: translateX(-50%);
+      top: 5%;
+      z-index: 1000 !important;
+    }
   }
 }

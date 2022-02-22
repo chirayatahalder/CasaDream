@@ -55,3 +55,18 @@
         font-family: "heading-font-1";
     }
 }
+@media only screen and (max-width: 426px) {
+    #cd_about {
+        #cd_about_header {
+            nav{
+                button[aria-expanded="true"]{
+                    margin: 12px 0px 0px;
+                }
+                height: 80px !important;
+    }
+    nav>a{
+        display: block !important;
+    }
+}
+    }
+}

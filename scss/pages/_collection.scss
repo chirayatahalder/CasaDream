@@ -22,7 +22,7 @@
             }
         }
         .slider1 {
-            background-image: url("../img/header-slider-1.jpg");
+            background-image: url("../img/kitchen/CATALOG MITON_page-0030.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -40,11 +40,11 @@
         }
         .slider2 {
             @extend .slider1;
-            background-image: url("../img/header-slider-2.jpg");
+            background-image: url("../img/decor/WG_01346.jpg");
         }
         .slider3 {
             @extend .slider1;
-            background-image: url("../img/header-slider-3.jpg");
+            background-image: url("../img/sofa/sofa-k22.jpg");
         }
     }
 
@@ -190,12 +190,29 @@
                     flex-direction: column;
                     flex: 48%;
                     max-width: 48%;
-                    img{
+                    a{
                         margin: 12px;
+                    }
+                    img{
                         object-fit: cover;
                     }
                 }
             }
         }
+    }
+}
+@media only screen and (max-width: 426px) {
+    #cd_collection {
+        #cd_collection_header {
+            nav{
+                button[aria-expanded="true"]{
+                    margin: 12px 0px 0px;
+                }
+                height: 80px !important;
+    }
+    nav>a{
+        display: block !important;
+    }
+}
     }
 }
