@@ -1,6 +1,6 @@
 footer {
   margin-top: 100px;
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #342f28;
   p {
     font-size: 24px;
@@ -12,6 +12,9 @@ footer {
     @include lg {
       font-size: 20px;
     }
+  }
+  h3{
+    font-family: "heading-font-1";
   }
   .navbar-brand {
     width: 250px;

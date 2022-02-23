@@ -1,9 +1,10 @@
 .cd_breadcrumb {
     background-color: $black;
-    padding: 100px 0;
+    padding: 30px 0;
     margin-top: 150px;
     h1 {
         color: $white;
+        margin-bottom: 15px !important;
     }
     a {
         font-size: 24px !important;
