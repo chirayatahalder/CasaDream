@@ -862,6 +862,10 @@ footer .navbar-brand img {
     margin: 12px 0px 0px;
   }
 }
+h5 a:hover {
+  color: #eab83b;
+}
+
 @font-face {
   font-family: "heading-font";
   src: url("../fonts/Freight-Big-Bold.otf");
