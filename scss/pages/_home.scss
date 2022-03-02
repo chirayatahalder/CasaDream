@@ -330,6 +330,26 @@ footer{
     }
 }
     }
+    #cd_home_video {
+        padding: 0;
+        margin: 0;
+        iframe {
+            width: 100%;
+            height: 220px;
+        }
+    }
+    #cd_home_process {
+        h3 {
+            margin-top: 50px;
+        }
+    }
+    #cd_home_new_2{
+        margin-top: 40px;
+        padding: 50px 0;
+        h2{
+            font-size: 19px;
+        }
+    }
 }
 h5{
     a:hover{

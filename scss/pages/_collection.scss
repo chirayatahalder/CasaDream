@@ -210,6 +210,13 @@
                 }
                 height: 80px !important;
     }
+    #cd_project_gallery {
+        .popup-gallery{
+            .project-item {
+                margin-top: 0px !important;
+            }
+        } 
+    }
     nav>a{
         display: block !important;
     }

@@ -34,4 +34,21 @@ footer {
   }
 }
   }
+  footer {
+    .col-lg-4{
+      text-align: center;
+    }
+    .col-lg-3{
+      text-align: center;
+      h3{
+        margin-top: 30px;
+      }
+      .form-group{
+        text-align: left !important;
+      }
+    }
+    .d-flex{
+      margin: 20px 0;
+    }
+  }
 }
