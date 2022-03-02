@@ -321,6 +321,12 @@ footer{
     }
 }
 @media only screen and (max-width: 426px) {
+    #cd_home_header{
+        height: 60vh !important;
+    }
+    .header-content{
+        height: 60vh !important;
+    }
     .header-content{
         width: 280px;
         margin: 0 auto;
