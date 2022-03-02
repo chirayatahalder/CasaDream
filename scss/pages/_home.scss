@@ -64,7 +64,7 @@
     }
     .sale_new_poster_1 {
         @extend .sale_poster;
-        background-image: url("../img/wall-planning/B.JPG");
+        background-image: url("../img/wall-panelling/B.JPG");
     }
     .now_new_poster_1 {
         @extend .sale_poster;
@@ -321,6 +321,10 @@ footer{
     }
 }
 @media only screen and (max-width: 426px) {
+    .header-content{
+        width: 280px;
+        margin: 0 auto;
+    }
     #cd_home {
         #cd_home_header {
             nav{

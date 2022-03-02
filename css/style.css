@@ -570,7 +570,7 @@ h1 {
   background-image: url("../img/wardrobe.jpg");
 }
 #cd_home_sale_now_poster .sale_new_poster_1 {
-  background-image: url("../img/wall-planning/B.JPG");
+  background-image: url("../img/wall-panelling/B.JPG");
 }
 #cd_home_sale_now_poster .now_new_poster_1 {
   background-image: url("../img/furnishing/210927-UTM-01.jpg");
@@ -874,6 +874,11 @@ footer .navbar-brand img {
   }
 }
 @media only screen and (max-width: 426px) {
+  .header-content {
+    width: 280px;
+    margin: 0 auto;
+  }
+
   #cd_home #cd_home_header nav button[aria-expanded=true] {
     margin: 12px 0px 0px;
   }
