@@ -550,8 +550,9 @@ h1 {
 }
 #cd_home_sale_now_poster .sale_poster, #cd_home_sale_now_poster .now_new_poster_2, #cd_home_sale_now_poster .sale_new_poster_2, #cd_home_sale_now_poster .now_new_poster_1, #cd_home_sale_now_poster .sale_new_poster_1, #cd_home_sale_now_poster .now_new_poster, #cd_home_sale_now_poster .sale_new_poster, #cd_home_sale_now_poster .now_poster {
   padding: 250px 0;
-  background-image: url("../img/sofa/home-sofa.jpg");
-  background-position: center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/sofa/home-sofa.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/sofa/home-sofa.jpg");
+  background-position: center center !important;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -561,25 +562,32 @@ h1 {
   font-family: "heading-font-1";
 }
 #cd_home_sale_now_poster .now_poster {
-  background-image: url("../img/arm-chair/DSC08831.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/arm-chair/DSC08831.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/arm-chair/DSC08831.jpg");
 }
 #cd_home_sale_now_poster .sale_new_poster {
-  background-image: url("../img/kit-chen.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/kit-chen.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/kit-chen.jpg");
 }
 #cd_home_sale_now_poster .now_new_poster {
-  background-image: url("../img/wardrobe.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/wardrobe.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/wardrobe.jpg");
 }
 #cd_home_sale_now_poster .sale_new_poster_1 {
-  background-image: url("../img/wall-panelling/B.JPG");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/wall-panelling/B.JPG");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/wall-panelling/B.JPG");
 }
 #cd_home_sale_now_poster .now_new_poster_1 {
-  background-image: url("../img/furnishing/210927-UTM-01.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/furnishing/210927-UTM-01.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/furnishing/210927-UTM-01.jpg");
 }
 #cd_home_sale_now_poster .sale_new_poster_2 {
-  background-image: url("../img/decor/WG_01345.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/decor/WG_01345.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/decor/WG_01345.jpg");
 }
 #cd_home_sale_now_poster .now_new_poster_2 {
-  background-image: url("../img/outdoor/outdoor-1.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/outdoor/outdoor-1.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/outdoor/outdoor-1.jpg");
 }
 
 #cd_home_collection .collection_heading {
@@ -841,6 +849,7 @@ footer h3 {
 }
 footer .navbar-brand {
   width: 250px;
+  margin-right: 0px !important;
 }
 footer .navbar-brand img {
   width: 100%;
@@ -874,8 +883,29 @@ footer .navbar-brand img {
   }
 }
 @media only screen and (max-width: 426px) {
+  #cd_home_words .your_words_content {
+    margin-top: 0px;
+    padding: 28px 20px;
+  }
+  #cd_home_words .your_words_content h2 {
+    position: absolute;
+    top: -40%;
+    font-weight: 600;
+    right: 7%;
+    font-size: 2.5rem;
+    text-align: right;
+    color: #fff;
+  }
+
   #cd_home_header {
     height: 60vh !important;
+  }
+
+  .sale_poster, #cd_home_sale_now_poster .now_poster, #cd_home_sale_now_poster .sale_new_poster, #cd_home_sale_now_poster .now_new_poster, #cd_home_sale_now_poster .sale_new_poster_1, #cd_home_sale_now_poster .now_new_poster_1, #cd_home_sale_now_poster .sale_new_poster_2, #cd_home_sale_now_poster .now_new_poster_2 {
+    padding: 100px 0 !important;
+  }
+  .sale_poster h3, #cd_home_sale_now_poster .now_poster h3, #cd_home_sale_now_poster .sale_new_poster h3, #cd_home_sale_now_poster .now_new_poster h3, #cd_home_sale_now_poster .sale_new_poster_1 h3, #cd_home_sale_now_poster .now_new_poster_1 h3, #cd_home_sale_now_poster .sale_new_poster_2 h3, #cd_home_sale_now_poster .now_new_poster_2 h3 {
+    font-size: 50px;
   }
 
   .header-content {
@@ -1512,6 +1542,11 @@ h1 {
 }
 
 @media only screen and (max-width: 426px) {
+  #cd_about_few_words p {
+    padding-right: 0px;
+    text-align: justify;
+  }
+
   #cd_about #cd_about_header nav {
     height: 80px !important;
   }
@@ -2638,6 +2673,9 @@ h1 {
 }
 
 @media only screen and (max-width: 426px) {
+  #cd_contact #cd_contact_address {
+    margin-top: 60px;
+  }
   #cd_contact #cd_contact_header nav {
     height: 80px !important;
   }

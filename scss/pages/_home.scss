@@ -40,8 +40,8 @@
     }
     .sale_poster {
         padding: 250px 0;
-        background-image: url("../img/sofa/home-sofa.jpg");
-        background-position: center center;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/sofa/home-sofa.jpg");
+        background-position: center center !important;
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
@@ -52,31 +52,31 @@
     }
     .now_poster {
         @extend .sale_poster;
-        background-image: url("../img/arm-chair/DSC08831.jpg");
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/arm-chair/DSC08831.jpg");
     }
     .sale_new_poster {
         @extend .sale_poster;
-        background-image: url("../img/kit-chen.jpg");
+        background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/kit-chen.jpg");
     }
     .now_new_poster {
         @extend .sale_poster;
-        background-image: url("../img/wardrobe.jpg");
+        background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/wardrobe.jpg");
     }
     .sale_new_poster_1 {
         @extend .sale_poster;
-        background-image: url("../img/wall-panelling/B.JPG");
+        background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/wall-panelling/B.JPG");
     }
     .now_new_poster_1 {
         @extend .sale_poster;
-        background-image: url("../img/furnishing/210927-UTM-01.jpg");
+        background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/furnishing/210927-UTM-01.jpg");
     }
     .sale_new_poster_2 {
         @extend .sale_poster;
-        background-image: url("../img/decor/WG_01345.jpg");
+        background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/decor/WG_01345.jpg");
     }
     .now_new_poster_2 {
         @extend .sale_poster;
-        background-image: url("../img/outdoor/outdoor-1.jpg");
+        background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.502305145691089) 100%),url("../img/outdoor/outdoor-1.jpg");
     }
 }
 
@@ -321,8 +321,29 @@ footer{
     }
 }
 @media only screen and (max-width: 426px) {
+    #cd_home_words{
+        .your_words_content{
+            margin-top: 0px;
+            padding: 28px 20px;
+            h2{
+                position: absolute;
+                top: -40%;
+                font-weight: 600;
+                right: 7%;
+                font-size: 2.5rem;
+                text-align: right;
+                color: #fff;
+            }
+        }
+    } 
     #cd_home_header{
         height: 60vh !important;
+    }
+    .sale_poster{
+        padding: 100px 0 !important;
+        h3{
+            font-size: 50px;
+        }
     }
     .header-content{
         height: 60vh !important;
