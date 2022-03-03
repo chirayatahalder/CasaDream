@@ -76,4 +76,18 @@
     }
 }
     }
+    #cd_project_gallery{
+        .project-item{
+            h3{
+                margin-top: 20px;
+            }
+            .line{
+                display: inline-block;
+                width: 90px;
+                height: 2px;
+                background-color: #eab83b;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }

@@ -2167,6 +2167,17 @@ h1 {
   #cd_project #cd_project_header nav > a {
     display: block !important;
   }
+
+  #cd_project_gallery .project-item h3 {
+    margin-top: 20px;
+  }
+  #cd_project_gallery .project-item .line {
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    background-color: #eab83b;
+    margin-bottom: 20px;
+  }
 }
 @font-face {
   font-family: "heading-font";
