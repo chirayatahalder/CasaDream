@@ -916,6 +916,10 @@ h5 a:hover {
   color: #eab83b;
 }
 
+.header-content h1 span {
+  white-space: nowrap;
+}
+
 @font-face {
   font-family: "heading-font";
   src: url("../fonts/Freight-Big-Bold.otf");
