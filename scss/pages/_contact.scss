@@ -3,6 +3,15 @@
 #cd_contact {
   .cd_contact_breadcrumb {
     @extend .cd_breadcrumb;
+    .container{
+      p{
+          display: inline-block;
+          &:not(:last-child)::after{
+              content: "\003E";
+              font-size: 24px;
+              padding-left: 25px;
+          }}
+      }
   }
 
   #cd_contact_address {
