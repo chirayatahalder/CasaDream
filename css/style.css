@@ -1174,12 +1174,12 @@ h5 a:hover {
     font: bold 2em "Montserrat", sans-serif;
   }
 }
-.animation-preloader img:nth-child(2) {
+.animation-preloader img {
   position: absolute;
   top: 35%;
   left: 50%;
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 100px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
