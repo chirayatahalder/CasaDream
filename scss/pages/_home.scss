@@ -441,9 +441,37 @@ cursor: none;
 
 .ctn-preloader .animation-preloader {
     position: absolute;
-  z-index: 99100;
+    z-index: 99100;
+    .loader-2{
+        width: 48px;
+    height: 48px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+        &:after {
+        // content: '';
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-bottom-color: #ffa70e ;
+        }
+  }
+
  
 }
+@keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
 
 /* Spinner cargando */
 .ctn-preloader .animation-preloader .spinner {
@@ -601,4 +629,5 @@ cursor: none;
         transform: translate(-50%,-50%);
     }
 }
+
 /* biju loader */
