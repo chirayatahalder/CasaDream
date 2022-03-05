@@ -1941,6 +1941,10 @@ h1 {
   font-size: 40px;
 }
 
+.margin-x {
+  margin: 0px 24px !important;
+}
+
 #cd_project .project-heading {
   margin-top: 200px;
 }
@@ -1996,6 +2000,10 @@ h1 {
   }
 }
 @media only screen and (max-width: 426px) {
+  .margin-x {
+    margin: 0px 6px !important;
+  }
+
   #cd_project #cd_project_header nav {
     height: 80px !important;
   }

@@ -1,6 +1,8 @@
 // importing the header
 @import "../layout/header";
-
+.margin-x{
+    margin: 0px 24px !important;
+}
 #cd_project {
     .cd_project_breadcrumb {
         @extend .cd_breadcrumb;
@@ -13,8 +15,10 @@
     }
     #cd_project_gallery {
         margin-top: 100px;
+        
         .project-item {
             margin-top: 100px;
+            
             h3{
                 font-family: "heading-font-1";
             }
@@ -62,6 +66,9 @@
 
 }
 @media only screen and (max-width: 426px) {
+    .margin-x{
+        margin: 0px 6px !important;
+    }
     #cd_project {
         #cd_project_header {
             nav{
@@ -78,6 +85,7 @@
     }
     #cd_project_gallery{
         .project-item{
+            
             h3{
                 margin-top: 20px;
             }
