@@ -1,3254 +1,735 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Dream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
-        crossorigin="anonymous" />
-    <title> Saraf</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <html prefix="og: http://ogp.me/ns#">
-
-    </html>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-
-
-    <link rel="icon" href="images/favicon.jpg" type="images/favicon.jpg" sizes="16x16">
-
-    <!-- <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-                "@type": "Question",
-                "name": "What is the minimum eligibility?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": ""
-                }
-            }, {
-                "@type": "Question",
-                "name": "Who is this program for?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": ""
-                }
-            }, {
-                "@type": "Question",
-                "name": "What subjects will you learn?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": ""
-                }
-            }, {
-                "@type": "Question",
-                "name": "What are the job opportunities?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": ""
-                }
-            }]
-        }
-    </script> -->
-
-
-    <!-- <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            "name": "",
-            "image": "",
-            "description": "",
-            "brand": "Saraf",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "168",
-                "bestRating": "5",
-                "worstRating": "1",
-                "ratingCount": "4.5"
-            }
-        }
-    </script> -->
-
-    <style>
-        #charts .chart {
-            background-color: #f1f1f1;
-            padding: 20px;
-        }
-
-        #myForm button {
-            background-color: #F26522;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .text-mobile .banner-form {
-                /* width:100%;*/
-                /*padding: 0 20px !important;*/
-            }
-
-            .banner-end-applynow {
-                margin-top: 20px !important;
-            }
-        }
-
-        #kgrlrcjep3681643956646368 {
-            transform: translate(10px, 10px) !important;
-        }
-    </style>
-
-
-    <!-- bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!--stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!--font-awesome icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-    <!--owl carousel-->
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-
-    <!-- google fonts-->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="toastr/toastr.min.css" rel="stylesheet">
-
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KR7L7VR');
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <style>
-        .nav-open-buttton {
-            background-color: #F26522;
-            color: #fff;
-            float: right;
-            margin-right: 30px;
-        }
-
-        .nav-open-buttton-mobile {
-            display: none;
-        }
-
-        .banner-end-applynow {
-            margin-top: 20px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .nav-open-buttton-mobile {
-                display: block;
-                background-color: #F26522;
-                color: #fff;
-                float: right;
-                margin-right: 30px;
-            }
-
-            .banner-end-applynow {
-                margin-top: 0px;
-                padding: 30px 0;
-            }
-        }
-
-        .block-txt p {
-            font-weight: 500 !important;
-            font-family: sans-serif;
-            line-height: 24px;
-        }
-    </style>
-
-    <!-- Meta Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '286371566896483');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=286371566896483&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MG68FMH');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Global site tag (gtag.js) - Google Ads: 586373576 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-586373576"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-586373576');
-    </script>
-
-    <!-- Style ADDED ON 0502 -->
-    <style>
-        .mb50-ar {
-            margin-top: 55px;
-        }
-
-        @media only screen and (max-width: 767px) {
-            .mb50-ar {
-                margin-top: 10px;
-            }
-
-            .mt15-ar {
-                margin-top: 20px;
-            }
-
-            .yt-video iframe {
-                height: 185px;
-            }
-
-            .about-icon-ar {
-                margin-top: 50px;
-            }
-        }
-    </style>
-    <!-- Style ADDED ON 0502 -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 
 <body>
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG68FMH" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR7L7VR" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top nav-extended">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <img src="images/menu.png" width="40px" height="30px">
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="images/top-logo.png" alt="Saraf" style="width: 100px;" class="img-responsive img-logo">
-                </a>
-                <!-- <button data-toggle="modal" data-target="#applyModal" class="open-button nav-open-buttton-mobile">Apply
-                    Now</button> -->
-                <!--<button class="open-button" style="color:#000; background-color:#fff;" data-toggle="modal" data-target="#exampleModal">Download Application Form</button>-->
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#industry">About the Program</a></li>
-                    <li><a href="#why">Course Structure</a></li>
-                    <li><a href="#about">Course Eligibility</a></li>
-                    <li><button type="button" data-toggle="modal" data-target="#applyModal"
-                            class="open-button nav-open-buttton">Enquire Now</button></li>
-                    <!--<li><a  href="#enquire">Apply Now</a></li>-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!--banner-->
-    <div class="banner">
-        <div class="container desktop">
-            <div class="row wrapper">
-                <div class="col-md-8 col-sm-6">
-                    <div class="text">
-                        <!-- <h1 style="font-family: sans-serif;">IFRS<br></h1> -->
-                        <br>
-                        <h1>
-                            <b>
-                                <!-- Earn the prestigious IFRS certification with Saraf Academy -->
-                                World's #1 <br>
-                                Accountancy Academy
-                            </b>
-                        </h1>
-                        <br>
-                        <p style="margin-top: 30px;">
-                            <strong>3,000,000</strong> careers advanced<br>
-                            <strong>1,500</strong> live classes every month<br>
-                            <strong>85%</strong> report career benefits including promotion or a new job<br>
-                        </p>
-                        <br>
-                        <!-- <p>Regulated by Association of Chartered Certified Accountant, the largest global entity for
-                            professional accountants and certified as ACCA, this qualification makes one highly
-                            employable and industry relevant resource in the domains of International Financial
-                            Regulatory Standards, Statutory Audit, Assurance, Risk Management and Control.</p>
-                        <br>
-                        <p> As an ACCA
-                            member, one is authorized to certify financial statements in 78 countries including entire
-                            Europe and the Middle East, Hong Kong, Singapore, China et al.</p>
-                        <br>
-                        <p> One can pursue this program
-                            right after X standard and complete the qualification by or before graduation.
-                            Simultaneously, one is conferred a B.Sc from Oxford Brookes University and an M.Sc from
-                            University of London.</p>
-                        <br> -->
-                        <!-- <a href="#about"><button style="background-color:#F26522;">Apply Now</button></a> -->
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 banner-form form-position">
-                    <form action="insert.php" method="post" id="register-now" class="text-center"
-                        novalidate="novalidate">
-                        <input type="hidden" name="_token" value="PBtxxvax1LXRhK4IL3Cm8Nj0Tw3ggCUHxDiv7ZFh">
-                        <h3 class="text-center" style="margin-bottom: 20px;text-transform: uppercase;font-size: 18px;">
-                            Request a CAll back</h3>
-                        <div class="row">
-                            <div class="text-left">
-                                <div class="form-group">
-                                    <input type="text" class="form-control " name="name" placeholder="Full Name*"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="col-md- text-left">
-                                <div class="form-group">
-                                    <input type="text" class="form-control " minlength="10" name="phone"
-                                        placeholder="Phone Number*" required>
-                                </div>
-                            </div>
-                            <div class="col-md- text-left">
-                                <div class="form-group">
-                                    <input type="email" class="form-control " name="email" placeholder="Email *"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="col-md- text-left">
-                                <div class="form-group ">
-                                    <input type="text" class="form-control " name="year"
-                                        placeholder="Your Last Qualification*">
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn1" style="background-color:#F26522;"> Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- banner for mobile-->
-    <div class="container">
-        <div class="text-mobile">
-            <!--<h2 style="font-size: 24px;"><strong ><span style="font-size: 30px;"> + PGP</span> <br><br>A Data Enhanced Program-->
-            <!--<br>for the Future.</strong></h2>-->
-            <!--<br>-->
-            <!--<p>Saraf is the first & only business school with a Business Analytics & Data Science Program in West Bengal in collaboration with IBM.</p>-->
-            <!--<br>-->
-            <h1 style="margin-top:-60px;"><strong> - <br> </strong></h1>
-            <p><b>Post Graduate Program in Business Analytics & Data Science</b>
-                <br><br>
-            <p><b>A Data Enhanced Program for the Future.</b>
-            </p>
-            <br>
-            <p>Saraf is the first Business School with an in Business Analytics and Data Science Program in West
-                Bengal in collaboration with the global giant IBM.</p>
-            <br>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 banner-form ">
-                    <form action="insert.php" method="post" id="register-now" class="text-center">
-                        <input type="hidden" name="_token" value="PBtxxvax1LXRhK4IL3Cm8Nj0Tw3ggCUHxDiv7ZFh">
-                        <h4 class="text-center" style="margin-bottom: 20px; color:#000;">Register Below</h4>
-                        <div class="row">
-                            <div class="text-left">
-                                <div class="form-group">
-                                    <input type="text" class="form-control " name="name" placeholder="Full Name*"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="col-md- text-left">
-                                <div class="form-group">
-                                    <input type="text" class="form-control " minlength="10" name="phone"
-                                        placeholder="Phone Number*" required>
-                                </div>
-                            </div>
-                            <div class="col-md- text-left">
-                                <div class="form-group">
-                                    <input type="email" class="form-control " name="email" placeholder="Email *"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="col-md- text-left">
-                                <div class="form-group ">
-                                    <input type="text" class="form-control " name="year"
-                                        placeholder="Your Last Qualification*" required>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn1" style="background-color:#F26522;">Register Now</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="row"
-            style="background-color: rgba(255,255,255,0.8); padding: 20px 10px; color: black; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); margin-top: 20px;">
-            <div class="col-xs-6">
-                <h4 style="font-size:16px;"><strong>Ranked Top 5 in<br>East India by<br>Times of India</strong></h4>
-            </div>
-            <div class="col-xs-6">
-                <h4 style="font-size:16px;"><strong>A** Rated B-School<br> by CRISIL</strong></h4>
-            </div>
-            <br><br>
-            <hr>
-            <div class="col-xs-6">
-                <h4 style="font-size:16px;"><strong>Awarded Best Education Brand by Economic Times</strong></h4>
-            </div>
-            <div class="col-xs-6">
-                <h4 style="font-size:16px;"><strong>Placement drive<br>from 400+ Companies</strong></h4>
-            </div>
-        </div> -->
-    </div>
-
-    </div>
-
-    <!-- <div class="container banner-end-applynow">
-        <div class="row" style="">
-            <div class="col-lg-12 text-center">
-                <button style="background-color:#F26522; color:#fff;" class="open-button" >Apply Now</button>
-                <button type="button" data-toggle="modal" data-target="#applyModal" class="open-button"
-                    style="background-color:#F26522; color:#fff;">
-                    Apply Now
-                </button>
-            </div>
-        </div>
+    <!-- <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
     </div> -->
-    <!-- floating box-->
+    <!-- Preloader start -->
+    <section class="preload">
+        <div id="preloader">
+            <div id="ctn-preloader" class="ctn-preloader">
+                <div class="animation-preloader">
+                    <!-- <div class="spinner">
+            <img src="img/loader.png" class="img-fluid" alt="">
+          </div> -->
+                    <!-- <img src="./img/CD_White_logo.gif" alt=""> -->
+                    <section><span class="loader-2"> </span></section>
+                    <!-- <div class="d-flex">
+            <div class="txt-loading me-md-5">
+              <span data-text-preloader="S" class="letters-loading">
+                S
+              </span>
 
+              <span data-text-preloader="C" class="letters-loading">
+                C
+              </span>
 
+              <span data-text-preloader="A" class="letters-loading">
+                A
+              </span>
 
+              <span data-text-preloader="R" class="letters-loading">
+                R
+              </span>
 
+              <span data-text-preloader="L" class="letters-loading">
+                L
+              </span>
 
-    <!--<div class="container">-->
-    <!--   <div class="row" style="padding:30px 0;">-->
-    <!--       <div class="col-lg-12 text-center">-->
-    <!--<button style="background-color:#F26522; color:#fff;" class="open-button" >Apply Now</button>-->
-    <!--           <button onclick="openFormApply()" class="open-button" style="background-color:#F26522; color:#fff;">-->
-    <!--               Apply Now-->
-    <!--           </button>-->
-    <!--       </div>-->
-    <!--   </div>         -->
-    <!--</div>-->
+              <span data-text-preloader="E" class="letters-loading">
+                E
+              </span>
 
-
-
-    <!-- Explore Our Programs -->
-    <div class="our-program padtop">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" style="margin-bottom: 30px;">
-                    <h2 class="text-center"> <strong>Explore Our Programs</strong></h2>
-                    <div class="line "></div>
-
-                    <h4 class="text-center" style="margin: 20px 0;">
-                        <strong> Courses that will make your career goals a reality
-                        </strong>
-                    </h4>
-                </div>
-                <div class="our-program-card">
-
-
-                    <div class="col-md-4">
-                        <div class="our-program-item-outer our-program-item-bg-1">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>Association of Chartered Certified Accountant</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 24 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="acca.html">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-4">
-                        <div class="our-program-item-outer our-program-item-bg-2">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>International Accounting Standards Board</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 24 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="ifrs.html">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-4">
-                        <div class="our-program-item-outer our-program-item-bg-3">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>Chartered Institute of Management Accountants</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 24 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="cima.html">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-                <div class="our-program-card">
-                    <div class="col-md-4 col-md-offset-2">
-                        <div class="our-program-item-outer our-program-item-bg-4">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>Certified Management Accountant</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 36 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="cma-us.html">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-4">
-                        <div class="our-program-item-outer our-program-item-bg-5">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>Certified Public Accountant</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 36 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="#">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
+              <span data-text-preloader="T" class="letters-loading">
+                T
+              </span>
             </div>
-        </div>
-    </div>
-    <!-- <div class="our-program padtop padbot">
-        <div class="container">
-            <div class="row">
-                <h2 class="text-center"> <strong>Explore Our Programs</strong></h2>
-                <div class="line "></div>
+            <br>
+            <div class="txt-loading">
+              <span data-text-preloader="L" class="letters-loading">
+                L
+              </span>
 
-                <h4 class="text-center" style="margin: 20px 0;">
-                    <strong> Courses that will make your career goals a reality
-                    </strong>
-                </h4>
-                <div class="owl-carousel owl-theme owl-carousel3">
+              <span data-text-preloader="O" class="letters-loading">
+                O
+              </span>
 
+              <span data-text-preloader="A" class="letters-loading">
+                A
+              </span>
 
-                    <div class="item">
-                        <div class="our-program-item-outer our-program-item-bg-1">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>Association of Chartered Certified Accountant</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 24 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
+              <span data-text-preloader="D" class="letters-loading">
+                D
+              </span>
 
-                                <div class="know-more">
-                                    <a href="acca.html">Know More</a>
-                                </div>
-                            </div>
+              <span data-text-preloader="I" class="letters-loading">
+                I
+              </span>
 
-                        </div>
+              <span data-text-preloader="N" class="letters-loading">
+                N
+              </span>
 
-
-                    </div>
-                    <div class="item">
-                        <div class="our-program-item-outer our-program-item-bg-2">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>International Accounting Standards Board</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 24 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="ifrs.html">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="item">
-                        <div class="our-program-item-outer our-program-item-bg-3">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>Chartered Institute of Management Accountants</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 24 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="cima.html">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="item">
-                        <div class="our-program-item-outer our-program-item-bg-4">
-                            <div class="our-program-item">
-                                <h4>
-                                    <strong>Certified Management Accountant</strong>
-                                </h4>
-                                <div class="our-program-item-inner">
-                                    <div> <span> <i class="fa fas fa-calendar-o"></i></span> 6 - 36 months </div>
-                                    <div> <span> <i class="fa fas fa-file-text"></i></span> Exams : Quarterly </div>
-                                </div>
-
-                                <div class="know-more">
-                                    <a href="cma-us.html">Know More</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
+              <span data-text-preloader="G" class="letters-loading">
+                G
+              </span>
             </div>
-        </div>
-    </div> -->
-    <!-- Explore Our Programs -->
+          </div> -->
 
-
-
-    <!-- Home about -->
-    <div class="home-about padtop">
-        <div class="container">
-            <div class="home-about-card-outer">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="home-about-card-inner">
-                            <!-- <img src="https://via.placeholder.com/500" class="img-responsive" alt=""> -->
-                            <img src="images/friendly-looking.png" class="img-responsive" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="home-about-card-inner">
-                            <h2><strong>
-                                    Get Matched The Most Valuable Course, Just Check <span>About Us</span> at
-                                    Saraf Academy
-                                </strong></h2>
-                            <!-- <div class="line" style="left: 0% !important; margin: 0px !important; background: #fff;"> -->
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod velit libero facere earum
-                                nostrum dolores quidem cupiditate autem quos, id laboriosam? Esse id fugiat odio
-                                voluptatem, accusamus totam ex facere voluptas saepe, facilis quos atque ratione velit
-                                quia aliquid ducimus!</p>
-                            <a href="#">About Us <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
                 </div>
+
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
             </div>
-        </div>
-    </div>
-    </div>
-    <!-- Home about -->
-
-
-
-    <!-- Why Saraf -->
-    <div class="why-saraf padtop padbot">
-        <div class="container">
-            <div class="row">
-                <h2 class="text-center"> <strong>Why Saraf Academy</strong></h2>
-                <div class="line "></div>
-            </div>
-            <div class="row padtop">
-                <div class="col-md-3 col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <img src="images/gold.png" class="img-responsive" alt="">
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>Gold Approved ACCA Learning Partner
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <i class="las la-chalkboard-teacher"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>Hours of Teaching Content Available
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3  col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <i class="las la-user-tie"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>Excellent Experience Trainers
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <i class="las la-street-view"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>Study from Anywhere
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-md-3 col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <i class="las la-rupee-sign"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>Subsidies worth up to ₹90,000
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3  col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <i class="las la-brain"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>Skill Building Support for Students
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3  col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <i class="las la-globe"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>Students from across the globe
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3  col-xs-6">
-                    <div class="why-saraf-card">
-                        <div class="col-md-4">
-                            <img src="images/360deg.png" class="img-responsive" alt="">
-                        </div>
-                        <div class="col-md-8">
-                            <h4><strong>360 Degree Support
-                                </strong></h4>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Why Saraf -->
-
-
-
-    <!-- hear us from our alumini -->
-    <div class="padtop padbot">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2><strong>
-                            Hear it from our Alumni
-                        </strong></h2>
-                    <div class="line" style="left: 0% !important; margin: 0px !important;"></div>
-                    <ul class="review">
-                        <li>
-                            <div class="review-wrap">
-                                <p>4.5</p>
-                                <span><i class="fa fas fa-star"></i></span>
-                                <div class="side-bar"></div>
-                                <img src="images/Tech-mahindra.jpg" class="img-responsive" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="review-wrap">
-                                <p>4.5</p>
-                                <span><i class="fa fas fa-star"></i></span>
-                                <div class="side-bar"></div>
-                                <img src="images/HDFC.jpg" class="img-responsive" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="review-wrap">
-                                <p>4.5</p>
-                                <span><i class="fa fas fa-star"></i></span>
-                                <div class="side-bar"></div>
-                                <img src="images/Accenture.jpg" class="img-responsive" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <div class="yt-video-1">
-
-                        <iframe src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen=""></iframe>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row padtop">
-                <div class="col-md-12 col-md-offset-">
-                    <div class="row">
-
-                        <div class="col-md-12">
-
-
-                            <div class="owl-carousel owl-theme owl-carousel2">
-
-
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/Kapil Kakra.png" class="img-responsive">
-                                        <h6>
-                                            Kapil Kakra<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            Prakash sir being a great guide. After completion of his lecture, there
-                                            are no doubts as all possible doubts are answered by sir himself.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/madhuvanthi S.jpeg" class="img-responsive">
-                                        <h6>
-                                            Madhuvanthi S<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            Value for money. The classes were very flexible and Prakash sir explains
-                                            each and every aspect very clear. They provide full guidance on how to
-                                            face exams and come out with flying colours.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/Mehul Ghelani.jpg" class="img-responsive">
-                                        <h6>
-                                            Mehul Ghelani<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            Prakash Sir himself is an Institution, so we can call Saraf Academy as
-                                            an Institution's coaching Institute. His efforts towards all the
-                                            students can be felt only if you're in the class to feel it and
-                                            difficult to describe in words. Academy support staff also imbibes same
-                                            quality of efforts and are very helpful. I graciously thank Saraf
-                                            Academy for their efforts in helping me clear the exam.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/Rajarshi Ray_photo.jpg" class="img-responsive">
-                                        <h6>
-                                            Rajarshi Ray<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            I am currently studying Dip IFRS and what I can vouch for is that
-                                            Prakash Saraf sir is one of the best teacher you can get at an
-                                            affordable cost. He is knowledgeable, humble and eager to help students
-                                            in clearing their doubts.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <!-- <div class="item">
-
-                                    <div class="test-block">
-                                        <div class="img-test">
-                                            <img class="img-responsive" src="images/Pic6.jpg" alt="">
-                                        </div>
-                                        <div class="block-txt">
-                                            <div class="text-tst">
-                                                <div class="name">
-                                                    <span><img class="img-responsive" src="images/comma.png"
-                                                            alt=""></span>
-                                                    <h3>Anuvab Durbal</h3>
-                                                </div>
-                                                <img class="img-responsive comp" src="images/Wipro.jpg" alt="">
-                                            </div>
-                                            <p>
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iusto
-                                                mollitia ea rerum illum minima aliquid ullam id Lorem ipsum dolor sit,
-
-                                            </p>
-                                        </div>
-
-
-
-                                    </div>
-
-                                </div> -->
-
-
-
-
-
-
-
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- hear us from our alumini -->
-
-
-
-    <!-- Employeee and Team Training Solutions -->
-    <div class="etts padtop padbot">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h2><strong>
-                            Employee and Team Training Solutions
-                        </strong></h2>
-                    <div class="line" style="left: 0% !important; margin: 0px !important;"></div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa, corrupti reiciendis
-                        inventore tempora quo.</p>
-
-                    <div class="know-more">
-                        <a href="acca.html">Know More</a>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="row etts-logo-outer">
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Tech-mahindra.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/HDFC.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Tata-Steel.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Accenture.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Standard-Chartered.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Berger-Paints.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Deutsche-bank.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Capgemini.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <div class="etts-logo-inner">
-                                <img src="images/Genpact.jpg" class="img-responsive" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Employeee and Team Training Solutions -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- =======================our facalty============================ -->
-
-
-    <div class="proff padbot " style="display: none;">
-        <div class="container ">
-
-            <div class="padbot padtop">
-                <!-- <h2 class="text-center"> <strong>Our Faculty</strong></h2> -->
-                <h2 class="text-center"> <strong>Prepare for IFRS with our Experienced Faculty</strong></h2>
-                <div class="line "></div>
-            </div>
-
-            <div class="row facalty">
-                <div class="col-md-7">
-                    <!-- <h3>
-                        <span><img class="img-responsive" src="images/comma.png" alt=""></span>
-                        Prakash Saraf – Founder &amp; CEO
-                    </h3> -->
-
-                    <p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        Hello Students,<br>
-                        I believe that every student has abundant potential in himself/herself and it takes the right
-                        pair of eyes to recognise it. At Saraf Academy, we carve out a student’s potential with the
-                        most encouraging hands of mentors, trainers and experts. Today, most of the Saraf passouts
-                        are creating history in the fields of Business Accounting, Management Accounting &amp;
-                        International Finance. We go beyond old-school methods, to create intuitive, engaging and
-                        efficient learning experiences for students. We use the latest and most flexible cutting edge
-                        learning technology that enables our students across the globe to connect and interact with
-                        us through our LIVE Online virtual platform Consistently high pass percentages, global and
-                        national rank holders has earned us the name of ‘Progression Kings’. Student success is the
-                        sole driving force for the Academy and the entire team is committed to delivering
-                        excellence. We try to encourage everyone at the institute to pursue the desired goal and
-                        accomplish the same like a conqueror.<br>
-                        <strong> So come, Take the right turn into your future with Saraf Academy.</strong>
-                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-
-
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <div class="img-box">
-                        <img class="img-responsive" src="images/mr.saraf1.png" alt="">
-                        <h3>
-                            <!-- <span><img class="img-responsive" src="images/comma.png" alt=""></span> -->
-                            Prakash Saraf – Founder &amp; CEO
-                        </h3>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 60px;">
-                <div class="col-md-5">
-                    <div class="img-box">
-                        <img class="img-responsive" src="images/ms.saraf1.png" alt="">
-                        <h3>
-                            <!-- <span><img class="img-responsive" src="images/comma.png" alt=""></span> -->
-                            Vidisha Saraf – Co-Founder &amp; CFO
-                        </h3>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <!-- <h3>
-                        <span><img class="img-responsive" src="images/comma.png" alt=""></span>
-                        Vidisha Saraf – Co-Founder &amp; CFO
-                    </h3> -->
-
-                    <p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        I know for sure, that every student aspiring professional has the right to a successful future.
-                        Achieving an academic excellence is the collective responsibility of the student, their
-                        teachers, parents, mentors and the institute. We at Saraf Academy, have developed
-                        outstanding business leaders in an enriching educational learning environment and have
-                        groomed aspirants to make a difference in the world of business. I&#39;m proud to say that Saraf
-                        Academy has lived up to its responsibilities. Our meticulously designed programs have
-                        helped students to consistently achieve high scores National and Global rankings. We have
-                        mentored over 50,000 students in the past 25 years and have developed the best curriculum
-                        attuned to the ever changing complex business environment. We&#39;re here to make world-
-                        class educational resources available to every student, at his or her doorstep across the
-                        globe. We offer an exhilarating and enriching experience to the aspiring future global
-                        business citizens.<br>
-                        <strong> So take the right turn, where your golden future is waiting for you.</strong>
-                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- =======================our facalty============================ -->
-
-
-
-    <!-- our faculty 2 -->
-    <section class="reviews">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center"> <strong>Prepare for IFRS with our Experienced Faculty</strong></h2>
-                <div class="line "></div>
-                </div>
-            </div>
-            <div class="review-box">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="front">
-                                    <div class="face" data-aos="">
-                                        <img class="img-fluid" src="images/mr.saraf1.png" alt="" />
-                                        <h3>Prakash Saraf</h3>
-                                        <p>Founder & CEO</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-md-offset-2">
-                                <div class="testi">
-                                    <div class="txt" data-aos="">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            Hello Students,<br>
-                                            I believe that every student has abundant potential in himself/herself and
-                                            it takes the right
-                                            pair of eyes to recognise it. At Saraf Academy, we carve out a student’s
-                                            potential with the
-                                            most encouraging hands of mentors, trainers and experts. Today, most of the
-                                            Saraf passouts
-                                            are creating history in the fields of Business Accounting, Management
-                                            Accounting &amp;
-                                            International Finance.
-                                        </p>
-                                        <p class="collapse multi-collapse" id="collapseExample1">
-                                            We go beyond old-school methods, to create intuitive, engaging and
-                                            efficient learning experiences for students. We use the latest and most
-                                            flexible cutting edge
-                                            learning technology that enables our students across the globe to connect
-                                            and interact with
-                                            us through our LIVE Online virtual platform Consistently high pass
-                                            percentages, global and
-                                            national rank holders has earned us the name of ‘Progression Kings’. Student
-                                            success is the
-                                            sole driving force for the Academy and the entire team is committed to
-                                            delivering
-                                            excellence. We try to encourage everyone at the institute to pursue the
-                                            desired goal and
-                                            accomplish the same like a conqueror.<br>
-                                            <strong> So come, Take the right turn into your future with Saraf
-                                                Academy.</strong>
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-
-                                        <button class="any-btn" type="button" data-toggle="collapse"
-                                            href="#collapseExample1"><i class="las la-angle-down"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <div class="border2">
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="review-box">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="front">
-                                    <div class="face" data-aos="">
-                                        <img class="img-fluid" src="images/ms.saraf1.png" alt="" />
-                                        <h3>
-                                            Vidisha Saraf</h3>
-                                        <p>Co-Founder & CFO</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-md-offset-2">
-                                <div class="testi">
-                                    <div class="txt" data-aos="">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            I know for sure, that every student aspiring professional has the right to a
-                                            successful future. Achieving an academic excellence is the collective
-                                            responsibility of the student, their teachers, parents, mentors and the
-                                            institute. We at Saraf Academy, have developed outstanding business leaders
-                                            in an enriching educational learning environment and have groomed aspirants
-                                            to make a difference in the world of business. I'm proud to say that Saraf
-                                            Academy has lived up to its responsibilities.
-                                        </p>
-                                        <p class="collapse multi-collapse" id="collapseExample">
-                                            Our meticulously designed programs have
-                                            helped students to consistently achieve high scores National and Global rankings. We have
-                                            mentored over 50,000 students in the past 25 years and have developed the best curriculum
-                                            attuned to the ever changing complex business environment. We&#39;re here to make world-
-                                            class educational resources available to every student, at his or her doorstep across the
-                                            globe. We offer an exhilarating and enriching experience to the aspiring future global
-                                            business citizens.<br>
-                                            <strong> So take the right turn, where your golden future is waiting for you.</strong>
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-
-                                        <button class="any-btn" type="button" data-toggle="collapse" href="#collapseExample"><i
-                                                class="las la-angle-down"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
         </div>
     </section>
 
 
-    <script>
-        // $('.any-btn').toggleClass('las la-angle-up');
-        $('.any-btn').click(function() {
-            $(this).find('i').toggleClass('las la-angle-up las la-angle-down');
-        });
-    </script>
-    <!-- our faculty 2 -->
-
-
-
-
-    <!-- ==================================================placements Logos====================================== -->
-
-    <div class="placements padtop" style="display: none;">
-        <div class="container">
-
-            <div class="row">
-                <h2 class="text-center"> <strong>Top Companies hiring Our Students</strong></h2>
-                <div class="line "></div>
-                <div class="col-md-10 col-md-offset-1 padtop">
-                    <!-- <div class="comp">
-
-                        <div class="row"> -->
-
-                    <div class="owl-carousel owl-theme specializationSlider">
-                        <div class="item">
-                            <img src="images/Accenture.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/Berger-Paints.jpg" alt="">
-
-                        </div>
-                        <div class="item">
-                            <img src="images/Capgemini.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/Deloitte.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/Deutsche-bank.jpg" alt="">
-
-                        </div>
-                        <div class="item">
-                            <img src="images/Genpact.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/HDFC.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/ICICI.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/KPMG.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/L_T.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/NBCC.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/PWC.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/Siemens.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/Standard-Chartered.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/Tata-Steel.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/Tech-mahindra.jpg" alt="">
-
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!-- </div>
-
-                    </div> -->
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ==================================================placements Logos====================================== -->
-
-
-    <!-- ==============================This is what our students say about us start============================== -->
-    <secton class="testi" style="display: none;">
-        <div class="container padbot padtop">
-            <h2 class="text-center"> <strong>This is what Our Students say About Us</strong></h2>
-            <div class="line "></div>
-            <div class="row padtop">
-                <div class="col-md-12 col-md-offset-">
-                    <div class="row">
-
-                        <div class="col-md-12">
-
-
-                            <div class="owl-carousel owl-theme owl-carousel2">
-
-
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/Kapil Kakra.png" class="img-responsive">
-                                        <h6>
-                                            Kapil Kakra<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            Prakash sir being a great guide. After completion of his lecture, there
-                                            are no doubts as all possible doubts are answered by sir himself.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/madhuvanthi S.jpeg" class="img-responsive">
-                                        <h6>
-                                            Madhuvanthi S<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            Value for money. The classes were very flexible and Prakash sir explains
-                                            each and every aspect very clear. They provide full guidance on how to
-                                            face exams and come out with flying colours.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/Mehul Ghelani.jpg" class="img-responsive">
-                                        <h6>
-                                            Mehul Ghelani<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            Prakash Sir himself is an Institution, so we can call Saraf Academy as
-                                            an Institution's coaching Institute. His efforts towards all the
-                                            students can be felt only if you're in the class to feel it and
-                                            difficult to describe in words. Academy support staff also imbibes same
-                                            quality of efforts and are very helpful. I graciously thank Saraf
-                                            Academy for their efforts in helping me clear the exam.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="item">
-                                    <div class="stud-info">
-                                        <img src="images/Rajarshi Ray_photo.jpg" class="img-responsive">
-                                        <h6>
-                                            Rajarshi Ray<span></span>
-                                        </h6>
-                                    </div>
-                                    <div class="stud-testi">
-                                        <p>
-                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            I am currently studying Dip IFRS and what I can vouch for is that
-                                            Prakash Saraf sir is one of the best teacher you can get at an
-                                            affordable cost. He is knowledgeable, humble and eager to help students
-                                            in clearing their doubts.
-                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-
-                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <!-- <div class="item">
-
-                                    <div class="test-block">
-                                        <div class="img-test">
-                                            <img class="img-responsive" src="images/Pic6.jpg" alt="">
-                                        </div>
-                                        <div class="block-txt">
-                                            <div class="text-tst">
-                                                <div class="name">
-                                                    <span><img class="img-responsive" src="images/comma.png"
-                                                            alt=""></span>
-                                                    <h3>Anuvab Durbal</h3>
-                                                </div>
-                                                <img class="img-responsive comp" src="images/Wipro.jpg" alt="">
-                                            </div>
-                                            <p>
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iusto
-                                                mollitia ea rerum illum minima aliquid ullam id Lorem ipsum dolor sit,
-
-                                            </p>
-                                        </div>
-
-
-
-                                    </div>
-
-                                </div> -->
-
-
-
-
-
-
-
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </secton>
-    <!-- ==============================This is what our students say about us End============================== -->
-
-
-
-
-    <!-- Saraf Learner Support -->
-    <div class="l-support padtop padbot">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2><strong>
-                            Saraf Learner Support
-                        </strong></h2>
-                    <div class="line" style="left: 0% !important; margin: 0px !important;"></div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-md-12">
-                    <p>Call us between 10 AM - 6 PM</p>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-md-6 col-xs-6">
-                    <div class="l-support-btn">
-                        <a href="tel:9836300046">
-                            <span><i class="fa fas fa-phone"></i></span>
-                            +91 983 630 0046
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-6">
-                    <div class="l-support-btn">
-                        <a href="mailto:classes@saraf.academy">
-                            <span><i class="fa fas fa-envelope"></i></span>
-                            classes@saraf.academy
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- Saraf Learner Support -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- ==========================FAQ=========================== -->
-    <div class="faq padtop padbot" style="display: none;">
-
-        <div class="container">
-            <h2 class="text-center"> <strong>FAQ</strong></h2>
-            <div class="line "></div>
-
-            <h4 class="text-center" style="margin: 20px 0;">
-                <strong> Our Course's Most Frequently Asked Questions</strong>
-            </h4>
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                What is IFRS?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                        aria-labelledby="headingOne">
-                        <div class="panel-body">
-                            <p style="font-weight: 500; font-family: sans-serif; line-height: 24px;">
-                                International Financial Reporting Standards (IFRS) are a set of accounting standards
-                                developed by the International Accounting Standards Board (IASB) that is becoming the
-                                global standard for the preparation of public company financial statements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What is the eligibility criteria for Diploma in IFRS?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            <p style="font-weight: 500; font-family: sans-serif; line-height: 24px;">
-                                A candidate needs to be a commerce graduate at the minimum (with 3 years of work
-                                experience) or a professional like CA, CFA, MBA (with 3 years of work experience).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Is it good to do a Diploma in IFRS offered by ACCA or ICWAI? </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                        aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            <p style="font-weight: 500; font-family: sans-serif; line-height: 24px;">
-                                IFRS certification course is quite important for you to obtain if you want to pursue a
-                                career in managing accounting standards. Both ACCA and ICWAI have their own
-                                significance. ACCA is the association that specializes basically in IFRS and other
-                                accounting roles. ICWAI specialized in IND-AS, management accounting, and costing. Both
-                                have their own significance and are different from one another.<br />
-                                But as per the experts are concerned, the ACCA international finance reporting standards
-                                course is much more standardized based upon the demands of MNCs.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                What are the benefits of Diploma in IFRS?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
-                        aria-labelledby="headingFour">
-                        <div class="panel-body">
-                            <p style="font-weight: 500; font-family: sans-serif; line-height: 24px;">
-                                Here are few benefits which a Diploma holder in IFRS enjoys:<br /><br />
-
-                                <strong>Demand in industry:</strong> IFRS qualified professionals are in high demand in
-                                MNCs and Big 4s
-                                which prefer people with international certifications. They are preferred across the
-                                globe because of their expertise in area of accounts.<br /><br />
-
-                                <strong>Career Development:</strong> IFRS Diploma gives commitment to the professional
-                                for a successful
-                                career and highlight their potential for appropriate roles.<br /><br />
-
-                                <strong>Better salary package:</strong> Many people consider salary package as potential
-                                criteria while
-                                choosing a career. IFRS Diploma gives you opportunity to earn more than a normal
-                                accountant by proving your expertise in the field of accounts.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What is the expected salary for a Diploma in IFRS holder?</a>
-                        </h4>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
-                        aria-labelledby="headingFive">
-                        <div class="panel-body">
-                            <p style="font-weight: 500; font-family: sans-serif; line-height: 24px;">
-                                Diploma in IFRS qualified professionals are offered salary of INR 5 to 6 lakhs per annum
-                                as per market survey. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                What benefits does a CA have with a diploma in IFRS?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                        <div class="panel-body">
-                            <p style="font-weight: 500; font-family: sans-serif; line-height: 24px;">
-                                With a CA under your belt, DipIFR offers an additional qualification in accounting. This
-                                may increase your employability score marginally - but not by much.<br /><br />
-
-                                More important is the fact that it gives a comprehensive exposure to IFRS, which is not
-                                there’s in the CA course currently.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- sticky button-->
-    <div class="container-fluid">
-        <div class="sticky">
-            <button class="open-button" type="button" data-toggle="modal" data-target="#applyModal">Enquire</button>
-        </div>
-
-        <div class="sticky-call" style="display: none;">
-            <a href="tel:9836300046"><button><i class="fa fa-phone" aria-hidden="true"
-                        style="padding: 3px;"></i></button></a>
-            <!--<br>-->
-            <!--<button><i class="fa fa-commenting-o" aria-hidden="true"></i></button>-->
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- =====================fixed bellow nav start=============================== -->
-    <div class="fixed-nav">
-        <div class="container-fluid">
-            <div class="row" style="display: flex; justify-content: center;">
-                <div class="col-md-6 col-xs-12">
-                    <!-- <div class="row">
-                    <div class="col-md-3">
-CALL  
-                    </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                </div> -->
-                    <ul>
-
-                        <li>
-                            CALL :<a href="tel:+918444040402" style="text-decoration: none; color: #fff;">
-                                8444040402</a>
+    <!-- ========================pre loader end========================== -->
+    <section id="cd_home">
+        <div id="cd_home_header">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/CD_White_logo.png" alt="CD Logo" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between p-4" id="navbarToggle">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
                         </li>
-
-                        <!-- <a href="">
-                            <li class="bar-line">
-                                <a href="mailto:classes@saraf.academy" style="text-decoration: none; color: #fff;">classes@saraf.academy</a>
-                            </li>
-                        </a> -->
-
-                        <li class="bar-line"> <a href="#" data-toggle="modal" data-target="#applyModal"> Brochure</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">ABOUT US</a>
                         </li>
-
-                        <li class="bar-line">
-                            <a href="#" data-toggle="modal" data-target="#applyModal"> Enquire </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./category.html">CATEGORY</a>
                         </li>
-                        <li class="bar-line d-none">
-                            <span style="    display: inline-block;
-                            top: 3px;
-                            position: relative;"><img src="images/phone-call.png" class="img-responsive" width="20px"
-                                    alt=""></span>
-                            <a href="tel:+918444040402"> Call </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./project.html">PROJECT</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
                     </ul>
+                </div>
+            </nav>
 
+            <!-- navigaion end here -->
+            <div class="header-content text-center">
+                <div>
+                    <!-- <h3 data-aos="fade-up" data-aos-duration="1000">Affordable Luxury</h3> -->
+                    <h1 data-aos="fade-up" data-aos-duration="1300" id="type"></h1>
+                    <!-- <p data-aos="fade-up" data-aos-duration="1500">
+                        <a href="" class="btn-custom">DISCOVER</a>
+                    </p> -->
                 </div>
             </div>
         </div>
-    </div>
+        <!-- header end -->
+        <div id="cd_home_new">
+            <img src="./img/new-back-line.png" alt="" class="new-back-line" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="new_content">
+                            <h3 data-aos="fade-up" data-aos-duration="800">Luxury Redefined</h3>
+                            <h2 data-aos="fade-up" data-aos-duration="1000">
+                                LUXURY MADE ACCESSIBLE
+                                <!-- FOR EVERY HOME -->
+                            </h2>
+                            <p class="mb-5" data-aos="fade-up" data-aos-duration="1200">
+                                A multi-brand outlet in central India, Casa Dream curates bespoke
+                                furnishing, furniture, and accessories. With a network in 25 cities,
+                                we bring to you an array of meticulously chosen collections from
+                                over 100 brands from around the globe.
+
+                            </p>
+                            <p class="mb-5" data-aos="fade-up" data-aos-duration="1200">
+                                We, at Casa Dream, find inspiration
+                                in everything around us, and offer you an
+                                exquisite design expression to help you shape
+                                the home of your dreams.
 
 
-
-    <!-- =====================fixed bellow nav end=============================== -->
-
-
-
-    <!-- Get in touch-->
-
-
-
-
-
-    <div class="footer-big" style="display: none;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12 ">
-                    <div class="container-fluid "
-                        style="background-color: #4d4d4d; color:#b3b3b3; padding-bottom: 10px; padding-top: 5px;">
-                        <h3 style="color: white;">Get in Touch</h3>
-                        <h5>P : <a href="tel:+918444040402" style="text-decoration: none;color: white;"> +91
-                                8444040402</a> / <a href="tel:+918444040406"
-                                style="text-decoration: none;color: white;"> +91 8444040406</a>
-                        </h5>
-                        <h5> E : <a href="mailto:classes@saraf.academy" style="text-decoration: none;color: white;">
-                                classes@saraf.academy</a>
-                        </h5>
-                        <h5>
-                            Suite 103, Alphanso Estate, 5 Surendra Mohan Ghosh Sarani(Mangoe Lane), Kolkata-700001, West
-                            Bengal, India
-                        </h5>
+                            </p>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./about.html" class="btn-custom">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="new_content-img" data-aos="fade-up" data-aos-duration="1500">
+                            <img src="./img/home-about.png" alt="New_content_image" load="lazy" class="img-fluid" />
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-8 col-md-offset-3 col-xs-offset-2">
+            </div>
+        </div>
+        <!-- new section end -->
+        <div id="cd_home_sale_now_poster">
+            <div class="container-fluid no-gutters">
+                <div class="row p-0">
+                    <div class="col-lg-6 p-0">
+                        <div class="sale_poster">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Sofas</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./sofas.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 p-0">
+                        <div class="now_poster">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Arm Chair</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./arm-chair.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <div class="sale_new_poster">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Kitchen</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./kitchen.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <div class="now_new_poster">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Wardrobe</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./kitchen.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <div class="sale_new_poster_1">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Wall Panelling</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./wall-panelling.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <div class="now_new_poster_1">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Furnishing</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./furnishing.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <div class="sale_new_poster_2">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Decor</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./decor.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <div class="now_new_poster_2">
+                            <h3 class="mb-3" data-aos="fade-up" data-aos-duration="1200">Outdoor</h3>
+                            <p data-aos="fade-up" data-aos-duration="1000">
+                                <a href="./outdoor.html" class="btn-custom-border">DISCOVER</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sale & now poster end -->
+        <div id="cd_home_collection">
+            <div class="collection_heading text-center">
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                    FEATURED <br />
+                    PROJECTS
+                </h2>
+                <h3 data-aos="fade-up" data-aos-duration="1200">Collection</h3>
+                <p data-aos="fade-up" data-aos-duration="1500">Affordable Luxury for
+                    Every Home.</p>
+            </div>
+            <div class="collections text-center">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-xs-3">
-                            <a href="https://www.youtube.com/c/PrakashSarafOfficial/videos">
-                                <img class="img-responsive" src="images/youtube.png" alt=""></a>
+                        <div class="col-lg-4">
+                            <img src="./img/residence1/home-thumb.jpg" class="img-fluid" alt="" data-aos="fade-up"
+                                data-aos-duration="1000" />
+                            <h5 class="mt-3">RESIDENTIAL PROJECTS</h5>
+                            <!-- <p>California Collection</p> -->
+                            <p data-aos="fade-up" data-aos-duration="1000" class="mt-3">
+                                <a href="./project.html" class="btn-custom-1">DISCOVER</a>
+                            </p>
                         </div>
-                        <div class="col-md-3 col-xs-3">
-                            <a href="https://www.facebook.com/saraf.academy">
-                                <img class="img-responsive" src="images/facebook.png" alt=""></a>
+                        <div class="col-lg-4">
+                            <img src="./img/residence2/DSC_0075-Edit.jpg" alt="" data-aos="fade-up"
+                                data-aos-duration="1200" />
+                            <h5 class="mt-3">RESIDENTIAL PROJECTS</h5>
+                            <!-- <p>California Collection</p> -->
+                            <p data-aos="fade-up" data-aos-duration="1000" class="mt-3">
+                                <a href="./project.html" class="btn-custom-1">DISCOVER</a>
+                            </p>
                         </div>
-                        <div class="col-md-3 col-xs-3">
-                            <a href="https://wa.me/918444040402">
-                                <img class="img-responsive" src="images/whatsapp.png" alt=""></a>
-                        </div>
-                        <div class="col-md-3 col-xs-3">
-                            <a href="https://t.me/joinchat/N50cYub0yH1iMzZl">
-                                <img class="img-responsive" src="images/telegram.png" alt=""></a>
+                        <div class="col-lg-4">
+                            <img src="./img/residence3/IMG_0008-Edit.jpg" alt="" data-aos="fade-up"
+                                data-aos-duration="1500" />
+                            <h5 class="mt-3">RESIDENTIAL PROJECTS</h5>
+                            <!-- <p>California Collection</p> -->
+                            <p data-aos="fade-up" data-aos-duration="1000" class="mt-3">
+                                <a href="./project.html" class="btn-custom-1">DISCOVER</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-    <div class="footer-new">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="widget">
-                        <h3 class="large-text">Let's Create Your Enlighted Future, Together.</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h4>Saraf Academy</h4>
-                        <!-- <p class="text-sm">A unit of Zelta Solutions Pvt. Ltd.<br>
-                            GSTIN 19AAACZ6300RZ2R</p> -->
-                        <p>India Office:<br>
-                            Suite 103, Alphanso Estate, 5 Surendra Mohan Ghosh Sarani(Mangoe Lane), Kolkata-700001, West
-                            Bengal, India</p>
-                        <!-- <p>London Office:<br>
-                            Devonshire House, 60 Goswell Road,<br>
-                            London, United Kingdom, EC1M 7AD</p> -->
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6" style="display: none;">
-                    <div class="widget">
-                        <h4>Popular Services</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a>
-                            </li>
-                            <li><a href="#">Lorem ipsum dolor sit.</a>
-                            </li>
-                            <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                            <li><a href="#">Lorem ipsum dolor sit amet.</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h4>Get in touch</h4>
-                        <div class="footer-contact">
-                            <a href="tel:+918444040402"><i class="fa fas fa-phone"></i> +91 844 404 0402</a>
-                            <a href="mailto:classes@saraf.academy"><i class="fa fas fa-envelope"></i>
-                                classes@saraf.academy</a>
-                            <!-- <a href="skype:om.webmaddy?chat"><i class="fa fab fa-skype"></i> om.webmaddy</a> -->
+        <!-- collection end -->
+        <!-- <div id="cd_home_our_products">
+                <div class="back-wrapper">
+                    <div class="container">
+                        <h3 data-aos="fade-up" data-aos-duration="1500">New</h3>
+                        <h2 data-aos="fade-up" data-aos-duration="1200">
+                            OUR PRODUCTS ARE <br />
+                            CUSTOM MADE
+                        </h2>
+                        <div class="products">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="./img/Product-list-img-1.png" alt="" load="lazy" data-aos="fade-up" data-aos-duration="800" />
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <h5>BLUE VASE</h5>
+                                        <p>VIEW PRODUCT</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <img src="./img/Product-list-img-2.png" alt="" load="lazy" data-aos="fade-up" data-aos-duration="1200" />
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <h5>BLUE VASE</h5>
+                                        <p>VIEW PRODUCT</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <img src="./img/Product-list-img-3.png" alt="" load="lazy" data-aos="fade-up" data-aos-duration="1500" />
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <h5>BLUE VASE</h5>
+                                        <p>VIEW PRODUCT</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="#" class="btn btn-primary"><i class="fa fas fa-paper-plane"></i> Get in touch</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h4>Connect with us on</h4>
-                        <div class="footer-social">
-                            <a href="https://www.facebook.com/saraf.academy" target="_blank"><i
-                                    class="fa fab fa-facebook-f"></i></a>
-                            <a href="https://www.youtube.com/c/PrakashSarafOfficial/videos" target="_blank"><i
-                                    class="fa fab fa-youtube"></i></a>
-
-                            <a href="https://wa.me/918444040402" target="_blank"><i class="fa fab fa-whatsapp"></i></a>
-                            <a href="https://t.me/joinchat/N50cYub0yH1iMzZl" target="_blank"><i
-                                    class="fa fab fa-telegram"></i></a>
-                            <!-- <a href="https://www.linkedin.com/company/3345319/admin/" target="_blank"><i
-                                    class="fa fab fa-linkedin"></i></a> -->
+                <div class="container">
+                    <div class="products">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="./img/Product-list-img-4.png" alt="" load="lazy" data-aos="fade-up" data-aos-duration="800" />
+                                <div class="d-flex justify-content-between mt-3">
+                                    <h5>BLUE VASE</h5>
+                                    <p>VIEW PRODUCT</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="./img/Product-list-img-5.png" alt="" load="lazy" data-aos="fade-up" data-aos-duration="1200" />
+                                <div class="d-flex justify-content-between mt-3">
+                                    <h5>BLUE VASE</h5>
+                                    <p>VIEW PRODUCT</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="./img/Product-list-img-6.png" alt="" load="lazy" data-aos="fade-up" data-aos-duration="1500" />
+                                <div class="d-flex justify-content-between mt-3">
+                                    <h5>BLUE VASE</h5>
+                                    <p>VIEW PRODUCT</p>
+                                </div>
+                            </div>
                         </div>
-
+                    </div>
+                </div>
+            </div> -->
+        <!-- our products end -->
+        <div id="cd_home_video">
+            <div class="container">
+                <!-- <a href="">Play</a> -->
+                <iframe width="100%" class="mt-5" src="https://www.youtube.com/embed/" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <!-- video end -->
+        <div id="cd_home_process">
+            <img src="./img/new-back-line.png" alt="" class="new-back-line" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 data-aos="fade-up" data-aos-duration="1200">Why Choose Us</h3>
+                        <h2 data-aos="fade-up" data-aos-duration="1500" style="text-transform: uppercase;">
+                            Here’s why you need Casa Dream’s luxury furnishings
+                        </h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/bulbs.png" alt="" load="lazy" />
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <!-- <h3><i class="fas fa-cog mr-2"></i></h3> -->
+                        <h3><i class="fas fa-regular fa-circle-check"></i></h3>
+                        <h5 class="font-weight-bold text-center">Quality Guaranteed
+                        </h5>
+                        <p>Choose interiors made of high-quality materials that leave no room for flaws.</p>
+                    </div>
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <h3><i class="fas fa-star mr-2"></i></h3>
+                        <h5 class="font-weight-bold text-center">Expert Consultation</h5>
+                        <p>Our skilled designers, help you explore design concepts and create your dream home.</p>
+                    </div>
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <h3><i class="far fa-lightbulb mr-2"></i></h3>
+                        <h5 class="font-weight-bold text-center">Site Inspection</h5>
+                        <p>Our experts inspect your site and then plan your dream home.</p>
+                    </div>
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <!-- <h3><i class="fas fa-share-alt mr-2"></i></h3> -->
+                        <h3><i class="fas fa-regular fa-eye"></i></h3>
+                        <h5 class="font-weight-bold text-center">Live Visualisation</h5>
+                        <p>We provide a live view of the products that you choose.</p>
+                    </div>
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <h3><i class="fas fa-camera mr-2"></i></h3>
+                        <h5 class="font-weight-bold text-center">Creative Curation</h5>
+                        <p>We are known for curating the best furnishings for your living spaces.</p>
+                    </div>
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <!-- <h3><i class="fas fa-star mr-2"></i></h3> -->
+                        <h3><i class="fas fa-cog mr-2"></i></h3>
+                        <h5 class="font-weight-bold text-center">Installation Service</h5>
+                        <p>Enjoy your design journey with our devoted care team's assistance.</p>
+                    </div>
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <!-- <h3><i class="fas fa-compass mr-2"></i></h3> -->
+                        <h3><i class="fas fa-regular fa-truck"></i></h3>
+                        <h5 class="font-weight-bold text-center">Delivery</h5>
+                        <p>We promise to deliver all the furnishings for your dream home in three days.</p>
+                    </div>
+                    <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <!-- <h3><i class="fas fa-chair mr-2"></i></h3> -->
+                        <h3><i class="fas fa-regular fa-headset"></i></h3>
+                        <h5 class="font-weight-bold text-center">Post Sales Service</h5>
+                        <p>We provide unwavering support after delivery of the products. </p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="widget">
-                        <p class="rating">
-                            <span class="star">
-                                <i class="fa fas fa-star"></i>
-                                <i class="fa fas fa-star"></i>
-                                <i class="fa fas fa-star"></i>
-                                <i class="fa fas fa-star"></i>
-                                <i class="fa fas fa-star-half"></i>
-                            </span>
-                            4.6 / 5.0 Average Rating by 328+ students for 500+ ex-students.
+        </div>
+        <!-- process end  -->
+        <div id="cd_home_new_2">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-6"></div> -->
+                    <div class="col-lg-12">
+                        <!-- <h3 data-aos="fade-up" data-aos-duration="1000">New</h3> -->
+                        <h2 class="mb-4 text-center" data-aos="fade-up" data-aos-duration="1200">
+                            " Your home should tell a story of who you are and <br />
+                            be a collection of what you love."
+                        </h2>
+                        <p class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <!-- <a href="" class="btn-custom">DISCOVER</a> -->
+                            -Nate Berkus
                         </p>
-                        <ul class="list-inline list-terms" style="display: none;">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Cookie Policy</a></li>
-                            <li><a href="#">Refund &amp; Cancellation Policy</a>
-                            </li>
-                        </ul>
-                        <div class="copyright"><i class="fa far fa-copyright"></i> Copyright 2022 | Marko & Brando</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="footer text-center" style="padding-top: 10px;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Copyright 2022 - Saraf Academy, Kolkata</p>
-                </div>
-
-                <div class="col-md-6 pad-footer">
-                    <p>All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-    <!-- download Modal -->
-    <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit amet.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="insert.php" method="POST">
-                        <input type="hidden" name="_token" value="PBtxxvax1LXRhK4IL3Cm8Nj0Tw3ggCUHxDiv7ZFh">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder=" Name*" required>
+        <!-- new 2 end -->
+        <div id="cd_home_colors" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="colors-content">
+                            <h3 data-aos="fade-up" data-aos-duration="1000">Colors</h3>
+                            <h2 data-aos="fade-up" data-aos-duration="1200">
+                                SHADES OF <br />
+                                ELEGANCE
+                            </h2>
+                            <p data-aos="fade-up" data-aos-duration="1500">
+                                Lorem ipsum dolor sit amet, consectetur ad is cing elit,
+                                <br />
+                                semdo eiusmod tempor est.
+                            </p>
+                            <!-- <p data-aos="fade-up" data-aos-duration="1800">
+                                <a href="">READ MORE</a>
+                            </p> -->
                         </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" minlength="10" name="phone"
-                                placeholder="Phone Number*" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Email Address*" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="year" placeholder="Your Last Qualification*"
-                                required>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="submit" class="btn"
-                                style="background-color:#F26522; color:#fff;">Download</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!--Apply now modal-->
-
-
-    <div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="applyModalLabel">Register now for more information</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <form action="insert.php" method="POST">
-                        <input type="hidden" name="_token" value="PBtxxvax1LXRhK4IL3Cm8Nj0Tw3ggCUHxDiv7ZFh">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder=" Name*" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" minlength="10" name="phone"
-                                placeholder="Phone Number*" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Email Address*" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="year" placeholder="Your Last Qualification*"
-                                required>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="submit" class="btn"
-                                style="background-color:#F26522; color:#fff;">Apply</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!--Brochure now modal-->
-
-
-    <div class="modal fade" id="brochureModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="applyModalLabel">Register now for more information</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="insert.php" method="POST">
-                        <input type="hidden" name="_token" value="PBtxxvax1LXRhK4IL3Cm8Nj0Tw3ggCUHxDiv7ZFh">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder=" Name*" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" minlength="10" name="phone"
-                                placeholder="Phone Number*" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Email Address*" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="year" placeholder="Your Last Qualification*"
-                                required>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="submit" class="btn"
-                                style="background-color:#F26522; color:#fff;">Download</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- ================syllabus Modal========== -->
-
-
-
-
-
-
-
-    <div class="modal fade" id="syllabusModal2" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="applyModalLabel">Register now for more information</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="table-responsive">
-                        <h5><span style="color:#FF8C00">Syllabus:</span></h5>
-
-                        <p><strong>ACCA Knowledge Level is divided into 3 papers known as BT, MA and FA</strong></p>
-
-                        <table border="1" style="border:1px solid #e1e1e1">
-                            <thead>
-                                <tr>
-                                    <th
-                                        style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                        <span style="color:#FFFFFF">BT: Business Technology</span>
-                                    </th>
-                                    <th
-                                        style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                        <span style="color:#FFFFFF">MA: Management Accounting</span>
-                                    </th>
-                                    <th
-                                        style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                        <span style="color:#FFFFFF">FA: FinancialAccounting</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="6" style="border-color:rgb(225, 225, 225); width:35%">• Business
-                                        stakeholders and external environment<br>
-                                        • Business structure<br>
-                                        • Accounting and reporting systems, controls and compliance<br>
-                                        • Leadership and teamwork<br>
-                                        • Personal effectiveness and communication<br>
-                                        • Ethics in accounting and business</td>
-                                    <td rowspan="6" style="border-color:rgb(225, 225, 225); width:30%">• Management
-                                        information<br>
-                                        • Cost accounting techniques<br>
-                                        • Budgeting<br>
-                                        • Standard costing<br>
-                                        • Performance measurement</td>
-                                    <td rowspan="6" style="border-color:rgb(225, 225, 225)">• Financial reporting<br>
-                                        • Qualitative characteristics of financial information<br>
-                                        • Double-entry and accounting systems<br>
-                                        • Recording transactions<br>
-                                        • Trial balance<br>
-                                        • Preparing basic financial statements<br>
-                                        • Preparing simple consolidated financial<br>
-                                        • Statements<br>
-                                        • Interpreting financial statements</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                            </tbody>
-                        </table>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/arm-chair/arm-26.jpg" alt="" load="lazy" data-aos="fade-up"
+                            data-aos-duration="1500" />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-
-
-
-
-
-    <div class="modal fade" id="syllabusModal3" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="applyModalLabel">Register now for more information</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="course-two row">
-                        <div class="col-md-12 nmls" id="forth1">
-
-                            <h3 style="color:#f26522">Syllabus</h3>
-                            <div class="table-responsive">
-                                <table border="1" style="border:1px solid #e1e1e1">
-                                    <thead>
-                                        <tr>
-                                            <th
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                                <span style="color:#FFFFFF">LW: Corporate and Business Law</span>
-                                            </th>
-                                            <th
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                                <span style="color:#FFFFFF">PM: Performance Management</span>
-                                            </th>
-                                            <th
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                                <span style="color:#FFFFFF">TX: Taxation</span>
-                                            </th>
-                                            <th
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                                <span style="color:#FFFFFF">FR: Financial Reporting</span>
-                                            </th>
-                                            <th
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                                <span style="color:#FFFFFF">AA: Audit and Assurance</span>
-                                            </th>
-                                            <th
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225); text-align:center">
-                                                <span style="color:#FFFFFF">FM: Financial Management</span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">
-                                                <p>• Essential elements of the legal system<br>
-                                                    • Obligations<br>
-                                                    • Employment law<br>
-                                                    • Formation and constitution of business organisations<br>
-                                                    • Financing companies<br>
-                                                    • Management, administration, and regulation of companies<br>
-                                                    • Insolvency<br>
-                                                    • Corporate fraudulent and criminal behaviour</p>
-                                            </td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">• Specialist
-                                                management accounting<br>
-                                                • Decision-making<br>
-                                                • Budgeting<br>
-                                                • Performance measurement<br>
-                                                <br>
-                                                &nbsp;
-                                            </td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">• The tax system<br>
-                                                • Income tax and NIC<br>
-                                                • Chargeable gains for individuals<br>
-                                                • Inheritance tax<br>
-                                                • Corporation tax<br>
-                                                • VAT</td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">
-                                                <p>• The conceptual and regulatory framework for financial reporting<br>
-                                                    • Accounting for transactions in financial statements<br>
-                                                    • Analyzing and interpreting financial statements<br>
-                                                    • Preparation of financial statements</p>
-                                            </td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">• Audit framework
-                                                and regulation<br>
-                                                • Planning and risk assessment<br>
-                                                • Internal control<br>
-                                                • Audit evidence<br>
-                                                • Review and reporting</td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">• Financial
-                                                management function<br>
-                                                • Financial management environment<br>
-                                                • Working capital management<br>
-                                                • Investment appraisal<br>
-                                                • Business finance<br>
-                                                • Business valuations<br>
-                                                • Risk management</td>
-                                        </tr>
-                                    </tbody>
-                                    <tbody>
-                                    </tbody>
-                                </table>
+        <!-- colors end -->
+        <div id="cd_home_words">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 p-0">
+                        <img src="./img/your-words-img.png" alt="" />
+                        <div class="overlay">&nbsp;</div>
+                    </div>
+                    <div class="col-lg-7 p-0">
+                        <div class="your_words_content">
+                            <!-- <h3 data-aos="fade-up" data-aos-duration="1000">Your Words</h3> -->
+                            <h2 data-aos="fade-up" data-aos-duration="1200">WHAT OUR CUSTOMERS SAY</h2>
+                            <p data-aos="fade-up" data-aos-duration="1200">
+                                <!-- Select your favorite social network and share our icons with your contacts or friends,
+                                if you do not have these
+                                social networks copy the link and paste it in the one you use. For more information join
+                                us. Select your favorite
+                                social network and share our icons with your contacts or friends, if you do not have
+                                these social networks copy
+                                the link and paste it in the one you use. For more information join us. -->
+                                Casa Dream is the best furniture company in India. It provides the best furnishing,
+                                furniture, and accessories in town. Working with Casa Dream was a fantastic experience.
+                                The procedure was simple and quick. I loved the outcome.
+                            </p>
+                            <div class="author" data-aos="fade-up" data-aos-duration="1200">
+                                <h5>ANCHAL VERMA</h5>
+                                <p><strong>Architect</strong></p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-
-
-
-
-    <div class="modal fade" id="syllabusModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="applyModalLabel">Register now for more information</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <!-- your words end -->
+        <div id="cd_home_contact">
+            <div class="container text-center">
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                    <!-- FEEL FREE TO <br /> -->
+                    REACH OUT TO <br />
+                    US ANYTIME
+                </h2>
+                <h3 data-aos="fade-up" data-aos-duration="1200">Contact Us</h3>
+                <p data-aos="fade-up" data-aos-duration="1500">
+                    Affordable Luxury for Every Home
+                </p>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
+                            <label for="exampleInputEmail1">First Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
+                            <label for="exampleInputEmail1">Last Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1500">
+                            <label for="exampleInputEmail1">E-mail address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="1800">
+                            <label for="exampleInputEmail1">Phone</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-2">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="2000">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-5 text-center">
+                        <div class="form-group" data-aos="fade-up" data-aos-duration="2500">
+                            <a href="" class="btn-custom">SUBMIT</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div class="course-two row">
-                        <div class="col-md-12 nmls" id="third1">
+            </div>
+        </div>
+        <!-- contact end -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                        <a class="navbar-brand" href="#"><img src="./img/CD_White_logo.png" alt="CD Logo"
+                                load="lazy" /></a>
+                        <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <h5><a href="https://www.instagram.com/casadreamhome/">INSTAGRAM</a></h5>
+                            <h5>FACEBOOK</h5>
+                            <h5>LINKEDIN</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-1" data-aos="fade-up" data-aos-duration="1200"></div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1200">
+                        <h3>Quick Links</h3>
+                        <div class="row">
 
-                            <h3 style="color:#f26522">Syllabus</h3>
-                            <div class="table-responsive">
-                                <p><strong>Strategic Professional Level of ACCA qualification consist of 6 papers out of
-                                        which 2 papers are compulsory and 2 are optional&nbsp;</strong></p>
-
-                                <table border="1" style="border:1px solid #e1e1e1">
-                                    <thead>
-                                        <tr>
-                                            <th colspan="2" style="border-color:rgb(225, 225, 225); text-align:center">
-                                                Essentials</th>
-                                            <th colspan="4" style="border-color:rgb(225, 225, 225); text-align:center">
-                                                Optional</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225)">
-                                                <span style="color:#FFFFFF">Strategic Business Leader</span>
-                                            </td>
-                                            <td
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225)">
-                                                <span style="color:#FFFFFF">Strategic Business Reporting</span>
-                                            </td>
-                                            <td
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225)">
-                                                <span style="color:#FFFFFF">AFM: Advance Financial Management</span>
-                                            </td>
-                                            <td
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225)">
-                                                <span style="color:#FFFFFF">APM: Advance Performance Management</span>
-                                            </td>
-                                            <td
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225)">
-                                                <span style="color:#FFFFFF">ATX: Advanced Taxation</span>
-                                            </td>
-                                            <td
-                                                style="background-color:rgb(255, 102, 51); border-color:rgb(225, 225, 225)">
-                                                <span style="color:#FFFFFF">AAA: Advanced Audit and Assurance</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">•&nbsp;Governance
-                                                and responsibility<br>
-                                                •&nbsp;Internal control and review<br>
-                                                •&nbsp;Identifying and assessing risk<br>
-                                                •&nbsp;Controlling risk<br>
-                                                •&nbsp;Professional values, ethics and social responsibility<br>
-                                                &nbsp;</td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">•&nbsp;Fundamental,
-                                                ethical and professional principles<br>
-                                                •&nbsp;The financial reporting framework.<br>
-                                                •&nbsp;Reporting the financial performance of a range of entities<br>
-                                                •&nbsp;Financial statement of group of entities<br>
-                                                •&nbsp;Interpreting financial statements for different of
-                                                stakeholders.<br>
-                                                •&nbsp;The impact of changes in accounting regulations</td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">&nbsp;•&nbsp;Role
-                                                and&nbsp; &nbsp;responsibility&nbsp; &nbsp;towards&nbsp;
-                                                &nbsp;stakeholders<br>
-                                                •&nbsp;Economic environment for multinational organizations<br>
-                                                •&nbsp;Advanced investment appraisal<br>
-                                                •&nbsp;Acquisitions and mergers<br>
-                                                •&nbsp;Corporate reconstruction and re-organization<br>
-                                                •&nbsp;6. Treasury and advanced risk management techniques<br>
-                                                •&nbsp;Emerging issues in finance and financial management</td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">•&nbsp;Strategic
-                                                planning and control<br>
-                                                •&nbsp;External influences on organizational performance<br>
-                                                •&nbsp;Performance measurement systems and design<br>
-                                                •&nbsp;Strategic performance measurement<br>
-                                                •&nbsp;Performance evaluation and corporate failure<br>
-                                                •&nbsp;Current developments and emerging issues performance management
-                                            </td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)"><br>
-                                                <br>
-                                                Syllabus of this paper changes based on the region student is from.
-                                            </td>
-                                            <td rowspan="6" style="border-color:rgb(225, 225, 225)">•&nbsp;Regulatory
-                                                environment<br>
-                                                •&nbsp;Professional and ethical consideration<br>
-                                                •&nbsp;Practice management<br>
-                                                •&nbsp;Planning and conducting audit of historical financial
-                                                information<br>
-                                                •&nbsp;Completion and reporting<br>
-                                                •&nbsp;Other assignments<br>
-                                                •&nbsp;Current issues and developments</td>
-                                        </tr>
-                                    </tbody>
-                                    <tbody>
-                                    </tbody>
-                                </table>
+                            <div class="col-lg-4 col-6">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./about.html">ABOUT US</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./category.html">CATEGORY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./project.html">PROJECT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./contact.html">CONTACT</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-
-
+                    </div>
+                    <!-- <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                        <h3>Faq</h3>
+                        <p>When can I visit your studio?</p>
+                        <p>How long does shipping take?</p>
+                        <p>Where can I find your catalog?</p>
+                        <p>How long does shipping take?</p>
+                    </div> -->
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1800">
+                        <h3>Subscribe</h3>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">E-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" />
+                            <small>* Get all the latest offers & info</small>
+                        </div>
+                        <a href="" class="btn-custom">SUBMIT</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
-
-
-
-
-
-
-    <!-- ================syllabus Modal END========== -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-
-    <style type="text/css">
-        .extra-image-section {
-            background-color: #fff;
-            height: 122px;
-            margin-top: 50px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .box-shadow-bibs {
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            padding: 36px;
-            min-height: 525px;
-        }
-
-        @media only screen and (max-width: 455px) {
-            .sticky-call {
-                z-index: 9;
-            }
-
-            .sticky-call button {
-                background-color: #F26522;
-            }
-
-            .sticky button {
-                z-index: 9;
-                background-color: #F26522;
-                border-radius: 0;
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 768px) {
-            .section-badges {
-                text-align: center;
-            }
-
-            .section-badges .border-bottom-one {
-                border-bottom: none;
-            }
-
-            .section-badges img {
-                display: inline-block;
-                width: 150px !important;
-                margin-bottom: 20px;
-            }
-
-            .extra-image-section {
-                height: 100%;
-            }
-        }
-    </style>
-
-
-
-
-
-
-
-    <!-- open/close form(popup form)-->
-
+        </footer>
+        <!-- footer end  -->
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+        integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.min.js"
+        integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
+        AOS.init();
 
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-
-        function openFormApply() {
-            document.getElementById("myFormApply").style.display = "block";
-        }
-
-        function closeFormApply() {
-            document.getElementById("myFormApply").style.display = "none";
-        }
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    <script>
-        $('.owl-carousel2').owlCarousel({
+        // TypewriterJS
+        var app = document.getElementById("type", "type");
+        var typewriter = new Typewriter(app, {
             loop: true,
-            margin: 20,
-            nav: true,
-            // autoWidth: true,
-            autoPlay: 5000,
-            items: 3,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                800: {
-                    items: 2,
-                },
-                1000: {
-                    items: 3,
+        });
+        // typewriter.typeString("Bespoke Luxury","Bespoke Luxury").pauseFor(2500).start();
+        typewriter.typeString('Bespoke Luxury')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Contemporary Living')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Stylish Spaces')
+            .pauseFor(2500)
+            .start();
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                // console.log($(window).scrollTop());
+
+                if ($(window).scrollTop() > 50) {
+                    $("nav").css("background-color", "#000");
+                    $("nav").css("height", "80px");
+                    $("nav>a").css("display", "none");
+                    $("#navbarToggle").css("margin-top", "0px");
                 }
-            }
-        })
-    </script>
-    <script>
-        $('.owl-carousel3').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            // dots: true,
-            // autoWidth: true,
-            autoPlay: 2500,
-            items: 3,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                800: {
-                    items: 2,
-                },
-                1000: {
-                    items: 3,
-                }
-            }
-        })
-    </script>
 
-
-    <!-- read more/ Read less-->
-
-    <!-- <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            autoWidth: true,
-            autoPlay: 2000,
-            items: 3,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    </script> -->
-
-    <script>
-        function myFunction1() {
-            var dots1 = document.getElementById("dots1");
-            var moreText1 = document.getElementById("more1");
-            var btnText1 = document.getElementById("myBtn1");
-
-            if (dots1.style.display === "none") {
-                dots1.style.display = "inline";
-                btnText1.innerHTML = "Read more";
-                moreText1.style.display = "none";
-            } else {
-                dots1.style.display = "none";
-                btnText1.innerHTML = "Read less";
-                moreText1.style.display = "inline";
-            }
-        }
-    </script>
-
-    <script>
-        function myFunction2() {
-            var dots2 = document.getElementById("dots2");
-            var moreText2 = document.getElementById("more2");
-            var btnText2 = document.getElementById("myBtn2");
-
-            if (dots2.style.display === "none") {
-                dots2.style.display = "inline";
-                btnText2.innerHTML = "Read more";
-                moreText2.style.display = "none";
-            } else {
-                dots2.style.display = "none";
-                btnText2.innerHTML = "Read less";
-                moreText2.style.display = "inline";
-            }
-        }
-    </script>
-
-    <script>
-        function myFunction3() {
-            var dots3 = document.getElementById("dots3");
-            var moreText3 = document.getElementById("more3");
-            var btnText3 = document.getElementById("myBtn3");
-
-            if (dots3.style.display === "none") {
-                dots3.style.display = "inline";
-                btnText3.innerHTML = "Read more";
-                moreText3.style.display = "none";
-            } else {
-                dots3.style.display = "none";
-                btnText3.innerHTML = "Read less";
-                moreText3.style.display = "inline";
-            }
-        }
-    </script>
-
-    <script>
-        function myFunction4() {
-            var dots4 = document.getElementById("dots4");
-            var moreText4 = document.getElementById("more4");
-            var btnText4 = document.getElementById("myBtn4");
-
-            if (dots4.style.display === "none") {
-                dots4.style.display = "inline";
-                btnText4.innerHTML = "Read more";
-                moreText4.style.display = "none";
-            } else {
-                dots4.style.display = "none";
-                btnText4.innerHTML = "Read less";
-                moreText4.style.display = "inline";
-            }
-        }
-    </script>
-    <script src="toastr/toastr.min.js"></script>
-    <!-- jquery validation link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
-
-    <script>
-        /* Toaster function */
-        function toasteFun(type, msg) {
-            $(function () {
-                // var type = $('#sessionVal').val();
-                // Command: toastr[type]("Its Working.. Ypeeee!")
-                Command: toastr[type](msg)
-                toastr.options = {
-                    "closeButton": true,
-                    "debug": false,
-                    "newestOnTop": false,
-                    "progressBar": false,
-                    "rtl": false,
-                    "positionClass": "toast-top-right",
-                    "preventDuplicates": false,
-                    "onclick": null,
-                    "showDuration": 300,
-                    "hideDuration": 1000,
-                    "timeOut": 7000,
-                    "extendedTimeOut": 1000,
-                    "showEasing": "swing",
-                    "hideEasing": "linear",
-                    "showMethod": "fadeIn",
-                    "hideMethod": "fadeOut"
+                if ($(window).scrollTop() < 51) {
+                    $("nav").css("background-color", "transparent");
+                    $("nav").css("height", "auto");
+                    $("nav>a").css("display", "block");
+                    $("#navbarToggle").css("margin-top", "70px");
                 }
             });
-        }
-    </script>
-    <script>
-        $('#register-now').validate({ // initialize the plugin
-            rules: {
-                email: {
-                    required: true,
-                    email: true
-                },
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                phone: {
-                    //required: true,
-                    //minlength: 10,
-                    // number: true
-                    required: true
-                },
-                year: {
-                    required: true,
-                    //minlength: 4,
-                    //digits: true
-                }
-            },
-            errorPlacement: function (error, element) {
-                return false;
-            },
-            highlight: function (element, errorClass, validClass) {
-                $(element).css('border', '1px solid #FA5657');
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $(element).css('border', 'none');
-            }
         });
-        $('#download-brochure').validate({ // initialize the plugin
-            rules: {
-                email: {
-                    required: true,
-                    email: true
-                },
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                phone: {
-                    //required: true,
-                    //minlength: 10,
-                    // number: true
-                    required: true
-                },
-                year: {
-                    required: true,
-                    //minlength: 2,
-                    //digits: true
+
+        // 
+
+
+        // $(window).on('load', function () {
+        //     // Fakes the loading setting a timeout
+        //     setTimeout(function () {
+        //         $('body').addClass('loaded');
+        //     });
+        // });
+
+
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $('#ctn-preloader').addClass('loaded');
+                $('body').removeClass('no-scroll-y');
+
+                if ($('#ctn-preloader').hasClass('loaded')) {
+                    $('#preloader').delay(1000).queue(function () {
+                        $(this).remove();
+                    });
                 }
-            },
-            errorPlacement: function (error, element) {
-                return false;
-            },
-            highlight: function (element, errorClass, validClass) {
-                $(element).css('border', '1px solid #FA5657');
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $(element).css('border', 'none');
-            }
+            }, 3000);
+
         });
-        $('#get-a-call-back-pgpex').validate({
-            rules: {
-                email: {
-                    required: true,
-                    email: true
-                },
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                phone: {
-                    //required: true,
-                    //minlength: 10,
-                    // number: true
-                    required: true
-                },
-                year: {
-                    required: true,
-                    //minlength: 4,
-                    //digits: true
-                }
-            },
-            errorPlacement: function (error, element) {
-                return false;
-            },
-            highlight: function (element, errorClass, validClass) {
-                $(element).css('border', '1px solid #FA5657');
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $(element).css('border', 'none');
-            }
-        });
+
+
     </script>
-    <script type="text/javascript">
-        $(".navbar-nav a").click(function () {
-            $(this).closest(".navbar-nav").parent().removeClass('in');
-        });
-    </script>
-
-    <!-- Magnific Popup core JS file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
-        crossorigin="anonymous"></script>
-
-
-
-    <script>
-        $('#charts').magnificPopup({
-            type: 'image',
-            delegate: 'a',
-            // other options
-            zoom: {
-                enabled: true,
-                duration: 300,
-                easing: 'ease-in-out'
-            }
-        });
-    </script>
-    <!-- <script>
-        $('.owl-carousel5').owlCarousel({
-            loop: true,
-            autoPlay: true,
-            autoPlay: 1500,
-            margin: 10,
-            nav: true,
-            items: 4,
-            responsive: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                400: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        })
-    </script> -->
-    <script>
-        $(".specializationSlider").owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: true,
-            dots: false,
-            autoPlay: true,
-            autoPlay: 1500,
-            smartSpeed: 1000,
-            items: 4,
-
-            navText: ['<i class="las la-long-arrow-alt-left"></i>', '<i class="las la-long-arrow-alt-right"></i>'],
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true,
-                    dots: false
-                },
-                576: {
-                    items: 3,
-                    nav: true,
-                    dots: false
-                },
-                768: {
-                    items: 3,
-                    nav: true
-                },
-                1050: {
-                    items: 4,
-                    nav: true
-
-                },
-                1400: {
-                    items: 4,
-                    nav: true
-                }
-            }
-        });
-    </script>
-    <!-- <script>
-        $('.owl-carousel1').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            // autoWidth: true,
-            autoPlay: 5000,
-            items: 2,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 5,
-                },
-                1000: {
-                    items: 4,
-                }
-            }
-        })
-    </script> -->
-    <script>
-        $.fn.responsiveTabs = function () {
-            this.addClass('responsive-tabs');
-            this.append($('<span class="glyphicon glyphicon-triangle-bottom"></span>'));
-            this.append($('<span class="glyphicon glyphicon-triangle-top"></span>'));
-
-            this.on('click', 'li.active > a, span.glyphicon', function () {
-                this.toggleClass('open');
-            }.bind(this));
-
-            this.on('click', 'li:not(.active) > a', function () {
-                this.removeClass('open');
-            }.bind(this));
-        };
-
-        $('.nav.nav-tabs').responsiveTabs();
-    </script>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/5ae1ae3a5f7cdf4f0533a22c/default';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
-
-
-
 </body>
 
 </html>
