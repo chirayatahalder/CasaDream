@@ -4,23 +4,25 @@
 #cd_about_header {
     .cd_about_breadcrumb {
         @extend .cd_breadcrumb;
-        .container{
-            p{
+
+        .container {
+            p {
                 display: inline-block;
-                &:not(:last-child)::after{
+
+                &:not(:last-child)::after {
                     content: "\003E";
                     font-size: 24px;
                     padding-left: 25px;
+                }
             }
         }
-    }
-            
+
     }
 
-                
-            
-        
-    
+
+
+
+
     .cd_header_image {
         img {
             width: 100%;
@@ -33,17 +35,21 @@
 
 #cd_about_few_words {
     margin-top: 100px;
+
     p {
         padding-right: 40px;
     }
-    h3{
+
+    h3 {
         font-family: "heading-font-1";
     }
+
     h4 {
         color: $yellow;
         font-family: "heading-font";
         margin-top: 50px;
     }
+
     ul {
         li {
             font-size: 22px;
@@ -55,22 +61,27 @@
 
 #cd_about_client {
     margin-top: 100px;
+
     img {
         width: 100%;
         max-width: 150px;
         height: auto;
     }
 }
+
 #cd_about_why {
     margin-top: 100px;
+
     i {
         color: $yellow;
         font-size: 24px !important;
     }
-    h3{
+
+    h3 {
         font-family: "heading-font-1";
     }
-    .client-outer{
+
+    .client-outer {
         width: 100%;
         height: 450px;
         background-image: url("../img/client.png");
@@ -78,7 +89,8 @@
         background-size: cover;
         // animation: scroll 10s infinite;
     }
-    .brand-outer{
+
+    .brand-outer {
         width: 100%;
         height: 450px;
         background-image: url("../img/brand.png");
@@ -86,42 +98,67 @@
         background-size: cover;
         // animation: scroll 10s infinite;
     }
+
     @keyframes scroll {
-        0%   {background-position: 0% 0%;}
+        0% {
+            background-position: 0% 0%;
+        }
+
         // 20%  {background-position: 20% 20%;}
         // 32%  {background-position: 40% 40%;}
         // 48% {background-position: 60% 60%;}
         // 64% {background-position: 80% 80%;}
-        50% {background-position: 100% 100%;}
+        50% {
+            background-position: 100% 100%;
+        }
+
         // 100% {background-position: 0% 0%;}
-      }
+    }
 }
+
 @media only screen and (max-width: 426px) {
-    #cd_about_few_words{
-        p{
+    #cd_about_few_words {
+        p {
             padding-right: 0px;
             text-align: justify;
         }
-    } 
+    }
+
+    .brand-outer {
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        height: 250px !important;
+    }
+    .client-outer {
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        height: 200px !important;
+    }
+
     #cd_about {
         #cd_about_header {
-            nav{
-                button[aria-expanded="true"]{
+            nav {
+                button[aria-expanded="true"] {
                     margin: 12px 0px 0px;
                 }
+
                 height: 80px !important;
+            }
+
+            nav>a {
+                display: block !important;
+            }
+        }
     }
-    nav>a{
-        display: block !important;
-    }
-}
-    }
-    #cd_home_contact{
+
+    #cd_home_contact {
         margin-top: 50px;
     }
-    #cd_about_why{
+
+    #cd_about_why {
         margin-top: 50px;
-        .col-lg-3{
+
+        .col-lg-3 {
             margin-top: 30px;
         }
     }
