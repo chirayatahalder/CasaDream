@@ -78,6 +78,10 @@ body {
   }
 }
 
+.font-weight-bold-1 {
+  font-weight: 1000 !important;
+}
+
 .btn-custom-border {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#cb8b1b), to(#eab83b));
@@ -152,7 +156,8 @@ h3 {
 h5 {
   font-family: "body-font";
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   h5 {
@@ -614,6 +619,11 @@ h1 {
 
 footer .navbar-nav .nav-item .nav-link:hover {
   color: #eab83b !important;
+}
+
+.cursorSize {
+  font-style: italic;
+  font-family: "heading-font-1";
 }
 
 #cd_home_colors {
@@ -1187,6 +1197,10 @@ body {
   }
 }
 
+.font-weight-bold-1 {
+  font-weight: 1000 !important;
+}
+
 .btn-custom-border {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#cb8b1b), to(#eab83b));
@@ -1261,7 +1275,8 @@ h3 {
 h5 {
   font-family: "body-font";
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   h5 {
@@ -1533,21 +1548,17 @@ h1 {
 }
 #cd_about_why .client-outer {
   width: 100%;
-  height: 200px;
+  height: 450px;
   background-image: url("../img/client.png");
   background-position: center top;
   background-size: cover;
-  -webkit-animation: scroll 10s infinite;
-          animation: scroll 10s infinite;
 }
 #cd_about_why .brand-outer {
   width: 100%;
-  height: 300px;
+  height: 450px;
   background-image: url("../img/brand.png");
   background-position: center top;
   background-size: cover;
-  -webkit-animation: scroll 10s infinite;
-          animation: scroll 10s infinite;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -1672,6 +1683,10 @@ body {
   }
 }
 
+.font-weight-bold-1 {
+  font-weight: 1000 !important;
+}
+
 .btn-custom-border {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#cb8b1b), to(#eab83b));
@@ -1746,7 +1761,8 @@ h3 {
 h5 {
   font-family: "body-font";
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   h5 {
@@ -2124,6 +2140,10 @@ body {
   }
 }
 
+.font-weight-bold-1 {
+  font-weight: 1000 !important;
+}
+
 .btn-custom-border {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#cb8b1b), to(#eab83b));
@@ -2198,7 +2218,8 @@ h3 {
 h5 {
   font-family: "body-font";
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   h5 {
@@ -2557,6 +2578,10 @@ body {
   }
 }
 
+.font-weight-bold-1 {
+  font-weight: 1000 !important;
+}
+
 .btn-custom-border {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#cb8b1b), to(#eab83b));
@@ -2631,7 +2656,8 @@ h3 {
 h5 {
   font-family: "body-font";
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   h5 {
@@ -3153,6 +3179,10 @@ body {
   }
 }
 
+.font-weight-bold-1 {
+  font-weight: 1000 !important;
+}
+
 .btn-custom-border {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#cb8b1b), to(#eab83b));
@@ -3227,7 +3257,8 @@ h3 {
 h5 {
   font-family: "body-font";
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   h5 {

@@ -245,6 +245,10 @@ footer{
         }    
     }
 }
+.cursorSize{
+    font-style: italic;
+    font-family: "heading-font-1";
+}
 #cd_home_colors {
     padding: 100px 0;
     background-image: url("../img/colors-bak.png");
@@ -383,6 +387,7 @@ footer{
     }
     .header-content{
         height: 60vh !important;
+
     }
     .header-content{
         width: 280px;

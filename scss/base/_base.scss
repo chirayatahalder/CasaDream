@@ -108,6 +108,9 @@ body {
     font-size: 16px;
   }
 }
+.font-weight-bold-1{
+  font-weight: 1000 !important;
+}
 .btn-custom-border {
   color: $white;
   background-image: linear-gradient(to right, $dark-yellow, $yellow);
@@ -164,7 +167,8 @@ h3 {
 h5 {
   font-family: "body-font";
   color: $white;
-  font-size: 22px;
+  font-size: 24px;
+  text-transform: uppercase;
   @include sm {
     font-size: 20px;
   }
