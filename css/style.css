@@ -303,6 +303,9 @@ nav .navbar-brand img {
     width: 180px !important;
   }
 }
+nav .navbar-nav li:not(:last-child) {
+  margin-right: 20px;
+}
 nav .nav-link {
   color: #ffffff !important;
   font-size: 20px !important;
@@ -550,6 +553,10 @@ h1 {
   width: 100%;
   height: 600px;
 }
+#cd_home_video video {
+  width: 100%;
+  height: 600px;
+}
 #cd_home_video .play {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,6 +711,38 @@ footer .navbar-nav .nav-item .nav-link:hover {
   font-family: "heading-font";
 }
 
+.mfp-title {
+  text-align: center;
+  padding: 6px 0;
+  margin-bottom: 20px;
+}
+.mfp-title .btn-custom {
+  padding: 5px 30px !important;
+}
+
+.modal .modal-dialog .modal-content {
+  background: #000;
+  color: #fff;
+  border: 1px solid #7e7e7e;
+  border-radius: 0px !important;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-header button {
+  opacity: 1;
+  text-shadow: none;
+}
+.modal .modal-dialog .modal-content .modal-header button span {
+  color: #fff;
+  font-size: 30px;
+}
+.modal .modal-dialog .modal-content h5 {
+  font-family: "heading-font-1" !important;
+  text-transform: capitalize;
+  font-size: 34px;
+}
+
 #cd_home_contact {
   margin-top: 100px;
 }
@@ -834,6 +873,10 @@ footer .navbar-brand img {
     margin: 0;
   }
   #cd_home_video iframe {
+    width: 100%;
+    height: 220px;
+  }
+  #cd_home_video video {
     width: 100%;
     height: 220px;
   }
@@ -1422,6 +1465,9 @@ nav .navbar-brand img {
     width: 180px !important;
   }
 }
+nav .navbar-nav li:not(:last-child) {
+  margin-right: 20px;
+}
 nav .nav-link {
   color: #ffffff !important;
   font-size: 20px !important;
@@ -1499,12 +1545,24 @@ h1 {
   font-size: 24px;
   padding-left: 25px;
 }
+#cd_about_header .cd_header_image {
+  position: relative;
+}
 #cd_about_header .cd_header_image img {
   width: 100%;
   height: auto;
   max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#cd_about_header .cd_header_image h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 80px !important;
 }
 
 #cd_about_few_words {
@@ -1555,7 +1613,7 @@ h1 {
 }
 #cd_about_why .brand-outer {
   width: 100%;
-  height: 450px;
+  height: 650px;
   background-image: url("../img/brand.png");
   background-position: center top;
   background-size: cover;
@@ -1924,6 +1982,9 @@ nav .navbar-brand img {
     width: 180px !important;
   }
 }
+nav .navbar-nav li:not(:last-child) {
+  margin-right: 20px;
+}
 nav .nav-link {
   color: #ffffff !important;
   font-size: 20px !important;
@@ -2009,8 +2070,11 @@ h1 {
 #cd_project #cd_project_gallery .project-item {
   margin-top: 100px;
 }
-#cd_project #cd_project_gallery .project-item h3 {
+#cd_project #cd_project_gallery .project-item h2 {
   font-family: "heading-font-1";
+}
+#cd_project #cd_project_gallery .project-item h5 {
+  text-transform: inherit !important;
 }
 #cd_project #cd_project_gallery .project-item .project-item-img-1, #cd_project #cd_project_gallery .project-item .project-item-img-4, #cd_project #cd_project_gallery .project-item .project-item-img-3, #cd_project #cd_project_gallery .project-item .project-item-img-2 {
   background-image: url("../img/residence1/WG_08013-HDR.jpg");
@@ -2380,6 +2444,9 @@ nav .navbar-brand img {
   nav .navbar-brand img {
     width: 180px !important;
   }
+}
+nav .navbar-nav li:not(:last-child) {
+  margin-right: 20px;
 }
 nav .nav-link {
   color: #ffffff !important;
@@ -2819,6 +2886,9 @@ nav .navbar-brand img {
     width: 180px !important;
   }
 }
+nav .navbar-nav li:not(:last-child) {
+  margin-right: 20px;
+}
 nav .nav-link {
   color: #ffffff !important;
   font-size: 20px !important;
@@ -3051,6 +3121,12 @@ h1 {
 }
 #cd_collection #cd_project_gallery .project-item {
   margin-top: 100px;
+}
+#cd_collection #cd_project_gallery .project-item h2 {
+  font-family: "heading-font-1";
+}
+#cd_collection #cd_project_gallery .project-item h5 {
+  text-transform: inherit !important;
 }
 #cd_collection #cd_project_gallery .project-item .project-item-img-1, #cd_collection #cd_project_gallery .project-item .project-item-img-3, #cd_collection #cd_project_gallery .project-item .project-item-img-2, #cd_collection #cd_project #cd_project_gallery .project-item .project-item-img-4, #cd_project #cd_collection #cd_project_gallery .project-item .project-item-img-4 {
   background-image: url("../img/project1.jpg");
@@ -3419,6 +3495,9 @@ nav .navbar-brand img {
   nav .navbar-brand img {
     width: 180px !important;
   }
+}
+nav .navbar-nav li:not(:last-child) {
+  margin-right: 20px;
 }
 nav .nav-link {
   color: #ffffff !important;

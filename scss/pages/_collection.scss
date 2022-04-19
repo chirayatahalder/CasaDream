@@ -161,6 +161,12 @@
         margin-top: 100px;
         .project-item {
             margin-top: 100px;
+            h2{
+                font-family: "heading-font-1";
+            }
+            h5{
+                text-transform: inherit !important;
+            }
             .project-item-img-1 {
                 background-image: url("../img/project1.jpg");
                 background-position: center center;

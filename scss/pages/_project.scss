@@ -19,8 +19,11 @@
         .project-item {
             margin-top: 100px;
             
-            h3{
+            h2{
                 font-family: "heading-font-1";
+            }
+            h5{
+                text-transform: inherit !important;
             }
             .project-item-img-1 {
                 background-image: url("../img/residence1/WG_08013-HDR.jpg");
