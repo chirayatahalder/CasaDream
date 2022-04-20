@@ -418,8 +418,8 @@ h1 {
 }
 #cd_home_sale_now_poster .sale_poster, #cd_home_sale_now_poster .now_new_poster_2, #cd_home_sale_now_poster .sale_new_poster_2, #cd_home_sale_now_poster .now_new_poster_1, #cd_home_sale_now_poster .sale_new_poster_1, #cd_home_sale_now_poster .now_new_poster, #cd_home_sale_now_poster .sale_new_poster, #cd_home_sale_now_poster .now_poster {
   padding: 250px 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/sofa/home-sofa.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/sofa/home-sofa.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5023051457))), url("../img/sofa/DSC08678.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5023051457) 100%), url("../img/sofa/DSC08678.jpg");
   background-position: center center !important;
   background-repeat: no-repeat;
   background-size: cover;
