@@ -515,6 +515,11 @@
                         
                         return false;*/
                     });
+                    this.wrap.on('click.btn-custom', '.btn-custom',  function (){
+                        document.querySelector('button.btn-custom').click();
+                        document.querySelector('.mfp-close').click();
+                        console.log('clicked');
+                    });
                 },
                 beforeClose: function () {
                     //this.wrap.off('click.pinhandler');

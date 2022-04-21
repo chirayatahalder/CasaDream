@@ -144,9 +144,12 @@
                                     <h2>Wardrobe</h2>
                                     <p>
                                         Choose from a wide variety of wardrobes that will suit your needs.
+                                        Our carefully designed wardrobe range is suitable for all members of the family.
+                                        Our selection includes a variety of materials and colors to suit any mood, as
+                                        well as various sizes to fit any nook.
                                     </p>
                                 </div>
-                                <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-lg-12 text-center" style="display: none;" data-aos="fade-up" data-aos-duration="1000">
                                     <!-- <h3>Modern Wardrobe</h3>
                                     <div class="line"></div> -->
                                     <h5>
@@ -518,6 +521,11 @@ setTimeout(function () {
               
                         
                         return false;*/
+                    });
+                    this.wrap.on('click.btn-custom', '.btn-custom',  function (){
+                        document.querySelector('button.btn-custom').click();
+                        document.querySelector('.mfp-close').click();
+                        console.log('clicked');
                     });
                 },
                 beforeClose: function () {

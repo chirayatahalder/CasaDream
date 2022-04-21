@@ -143,12 +143,13 @@
                                 <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-duration="1000">
                                     <h2>Decor</h2>
                                     <p>
-                                        Enhance the beauty of your home with our home decor items.
+                                        Enhance the beauty of your home with our home decor items. Accentuate your space with our decor and light pieces. Be it a vase, mural or
+                                        painting, Find the perfect element to complete your interior look.
                                     </p>
                                 </div>
                                 <div class="col-lg-12 text-center" style="display: none;" data-aos="fade-up" data-aos-duration="1000">
-                                    <h3>Vibrant Home Decor</h3>
-                                    <div class="line"></div>
+                                    <!-- <h3>Vibrant Home Decor</h3>
+                                    <div class="line"></div> -->
                                     <h5>
                                         Decoration enhances our sense of well-being and beauty. Create a display at home
                                         by gathering some of your favorite tiny objects that match the same color
@@ -517,6 +518,11 @@
               
                         
                         return false;*/
+                    });
+                    this.wrap.on('click.btn-custom', '.btn-custom',  function (){
+                        document.querySelector('button.btn-custom').click();
+                        document.querySelector('.mfp-close').click();
+                        console.log('clicked');
                     });
                 },
                 beforeClose: function () {

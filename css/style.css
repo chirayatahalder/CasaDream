@@ -721,7 +721,7 @@ footer .navbar-nav .nav-item .nav-link:hover {
 }
 
 .modal .modal-dialog .modal-content {
-  background: #000;
+  background: #00000080;
   color: #fff;
   border: 1px solid #7e7e7e;
   border-radius: 0px !important;
@@ -1554,6 +1554,7 @@ h1 {
   max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.68;
 }
 #cd_about_header .cd_header_image h1 {
   position: absolute;
@@ -1613,7 +1614,7 @@ h1 {
 }
 #cd_about_why .brand-outer {
   width: 100%;
-  height: 650px;
+  height: 1050px;
   background-image: url("../img/brand.png");
   background-position: center top;
   background-size: cover;
@@ -1648,7 +1649,7 @@ h1 {
   .brand-outer {
     background-size: contain !important;
     background-repeat: no-repeat !important;
-    height: 250px !important;
+    height: 450px !important;
   }
 
   .client-outer {
@@ -1657,6 +1658,9 @@ h1 {
     height: 200px !important;
   }
 
+  #cd_about #cd_about_header .cd_header_image h1 {
+    font-size: 40px !important;
+  }
   #cd_about #cd_about_header nav {
     height: 80px !important;
   }
@@ -2064,45 +2068,49 @@ h1 {
 #cd_project .project-heading h1 {
   color: #fff;
 }
-#cd_project #cd_project_gallery {
+#cd_project .cd_project_gallery {
   margin-top: 100px;
 }
-#cd_project #cd_project_gallery .project-item {
+#cd_project .cd_project_gallery .project-item {
   margin-top: 100px;
 }
-#cd_project #cd_project_gallery .project-item h2 {
+#cd_project .cd_project_gallery .project-item h2 {
   font-family: "heading-font-1";
 }
-#cd_project #cd_project_gallery .project-item h5 {
+#cd_project .cd_project_gallery .project-item h4 {
+  font-size: 2rem;
+  color: #eab83b;
+}
+#cd_project .cd_project_gallery .project-item h5 {
   text-transform: inherit !important;
 }
-#cd_project #cd_project_gallery .project-item .project-item-img-1, #cd_project #cd_project_gallery .project-item .project-item-img-4, #cd_project #cd_project_gallery .project-item .project-item-img-3, #cd_project #cd_project_gallery .project-item .project-item-img-2 {
+#cd_project .cd_project_gallery .project-item .project-item-img-1, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-3, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-3, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-2, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-2, #cd_project .cd_project_gallery .project-item .project-item-img-4, #cd_project .cd_project_gallery .project-item .project-item-img-3, #cd_project .cd_project_gallery .project-item .project-item-img-2 {
   background-image: url("../img/residence1/WG_08013-HDR.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
 }
-#cd_project #cd_project_gallery .project-item .project-item-img-1 a, #cd_project #cd_project_gallery .project-item .project-item-img-4 a, #cd_project #cd_project_gallery .project-item .project-item-img-3 a, #cd_project #cd_project_gallery .project-item .project-item-img-2 a {
+#cd_project .cd_project_gallery .project-item .project-item-img-1 a, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-3 a, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-3 a, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-2 a, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-2 a, #cd_project .cd_project_gallery .project-item .project-item-img-4 a, #cd_project .cd_project_gallery .project-item .project-item-img-3 a, #cd_project .cd_project_gallery .project-item .project-item-img-2 a {
   position: absolute;
   bottom: 3%;
   right: 3%;
 }
-#cd_project #cd_project_gallery .project-item .project-item-img-2 {
+#cd_project .cd_project_gallery .project-item .project-item-img-2 {
   background-image: url("../img/residence2/DSC_0266-Edit.jpg");
 }
-#cd_project #cd_project_gallery .project-item .project-item-img-3 {
+#cd_project .cd_project_gallery .project-item .project-item-img-3 {
   background-image: url("../img/residence3/17.jpg");
 }
-#cd_project #cd_project_gallery .project-item .project-item-img-4 {
+#cd_project .cd_project_gallery .project-item .project-item-img-4 {
   background-image: url("../img/residence4/WG_01346.jpg");
 }
 
 @media only screen and (max-width: 426px) {
-  #cd_project #cd_project_gallery .project-item .project-item-img-1,
-#cd_project #cd_project_gallery .project-item .project-item-img-4,
-#cd_project #cd_project_gallery .project-item .project-item-img-3,
-#cd_project #cd_project_gallery .project-item .project-item-img-2 {
+  #cd_project .cd_project_gallery .project-item .project-item-img-1, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-3, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-3, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-2, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-2,
+#cd_project .cd_project_gallery .project-item .project-item-img-4,
+#cd_project .cd_project_gallery .project-item .project-item-img-3,
+#cd_project .cd_project_gallery .project-item .project-item-img-2 {
     height: 200px !important;
   }
 
@@ -2130,10 +2138,10 @@ h1 {
     display: block !important;
   }
 
-  #cd_project_gallery .project-item h3 {
+  .cd_project_gallery .project-item h3 {
     margin-top: 20px;
   }
-  #cd_project_gallery .project-item .line {
+  .cd_project_gallery .project-item .line {
     display: inline-block;
     width: 90px;
     height: 2px;
@@ -3128,14 +3136,14 @@ h1 {
 #cd_collection #cd_project_gallery .project-item h5 {
   text-transform: inherit !important;
 }
-#cd_collection #cd_project_gallery .project-item .project-item-img-1, #cd_collection #cd_project_gallery .project-item .project-item-img-3, #cd_collection #cd_project_gallery .project-item .project-item-img-2, #cd_collection #cd_project #cd_project_gallery .project-item .project-item-img-4, #cd_project #cd_collection #cd_project_gallery .project-item .project-item-img-4 {
+#cd_collection #cd_project_gallery .project-item .project-item-img-1, #cd_collection #cd_project_gallery .project-item .project-item-img-3, #cd_collection #cd_project_gallery .project-item .project-item-img-2, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-4, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-4 {
   background-image: url("../img/project1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
 }
-#cd_collection #cd_project_gallery .project-item .project-item-img-1 a, #cd_collection #cd_project_gallery .project-item .project-item-img-3 a, #cd_collection #cd_project_gallery .project-item .project-item-img-2 a, #cd_collection #cd_project #cd_project_gallery .project-item .project-item-img-4 a, #cd_project #cd_collection #cd_project_gallery .project-item .project-item-img-4 a {
+#cd_collection #cd_project_gallery .project-item .project-item-img-1 a, #cd_collection #cd_project_gallery .project-item .project-item-img-3 a, #cd_collection #cd_project_gallery .project-item .project-item-img-2 a, #cd_collection #cd_project_gallery #cd_project .cd_project_gallery .project-item .project-item-img-4 a, #cd_project .cd_project_gallery #cd_collection #cd_project_gallery .project-item .project-item-img-4 a {
   position: absolute;
   bottom: 3%;
   right: 3%;

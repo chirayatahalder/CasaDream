@@ -144,14 +144,23 @@
                                     <h2>Wall Panelling</h2>
                                     <p>
                                         Exclusive Wall Panels for your kitchen, room, and hall.
+                                        The most exclusive category which evokes the most silent part of the setting,
+                                        the walls. Create statement walls and backdrops for your Living, Dining or
+                                        Bedrooms with our
+                                        signature wall panels. Available in several design languages, customisable to
+                                        every size and colour.
                                     </p>
                                 </div>
                                 <div class="col-lg-12 text-center" style="display: none;" data-aos="fade-up" data-aos-duration="1000">
-                                    <h3>Stylish Wall Panels</h3>
-                                    <div class="line"></div>
+                                    <!-- <h3>Stylish Wall Panels</h3>
+                                    <div class="line"></div> -->
                                     <h5>
-                                        Splashes are deflected by wall panels. Choose your favorite color or pattern and
-                                        switch it out whenever you want a new appearance in your home.
+                                        The most exclusive category which evokes the most silent part of the setting,
+                                        the walls. Create statement walls and backdrops for your Living, Dining or
+                                        Bedrooms with our
+                                        signature wall panels. Available in several design languages, customisable to
+                                        every size and colour.
+
                                     </h5>
                                 </div>
                             </div>
@@ -205,7 +214,8 @@
                                 <h5><a href="./furnishing.html">Furniture</a></h5>
                                 <h5><a href="./furnishing.html">Furnishing</a></h5>
                             </div>
-                            <p>We make interiors infused with the spirit of contemporary design and minimalist philosophies.
+                            <p>We make interiors infused with the spirit of contemporary design and minimalist
+                                philosophies.
                             </p>
                             <div class="d-flex justify-content-between">
                                 <h5><a href="https://www.instagram.com/casadreamhome/">INSTAGRAM</a></h5>
@@ -217,7 +227,7 @@
                         <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1200">
                             <h3>Quick Links</h3>
                             <div class="row">
-    
+
                                 <div class="col-lg-4 col-6">
                                     <ul class="navbar-nav m-auto">
                                         <li class="nav-item">
@@ -441,18 +451,18 @@
         });
         $(document).ready(function () {
 
-setTimeout(function () {
-    $('#ctn-preloader').addClass('loaded');
-    $('body').removeClass('no-scroll-y');
+            setTimeout(function () {
+                $('#ctn-preloader').addClass('loaded');
+                $('body').removeClass('no-scroll-y');
 
-    if ($('#ctn-preloader').hasClass('loaded')) {
-        $('#preloader').delay(1000).queue(function () {
-            $(this).remove();
+                if ($('#ctn-preloader').hasClass('loaded')) {
+                    $('#preloader').delay(1000).queue(function () {
+                        $(this).remove();
+                    });
+                }
+            }, 3000);
+
         });
-    }
-}, 3000);
-
-});
     </script>
     <!-- <script>
         $(document).ready(function () {
@@ -477,63 +487,68 @@ setTimeout(function () {
     </script> -->
 
 
-<script>
+    <script>
 
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        closeBtnInside: false,
-        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
 
-        image: {
-            verticalFit: true,
-            titleSrc: function (item) {
+            image: {
+                verticalFit: true,
+                titleSrc: function (item) {
 
-                var caption = item.el.attr('title');
+                    var caption = item.el.attr('title');
 
-                // var pinItURL = "https://pinterest.com/pin/create/button/";
-                var pinItURL = "#exampleModal";
+                    // var pinItURL = "https://pinterest.com/pin/create/button/";
+                    var pinItURL = "#exampleModal";
 
-                // Refer to https://developers.pinterest.com/pin_it/
-                // pinItURL += '?url=' + 'http://dimsemenov.com/plugins/magnific-popup/';
-                // pinItURL += '&media=' + item.el.attr('href');
-                // pinItURL += '&description=' + caption;
-
-
-                // return caption + ' &middot; <a class="pin-it" href="' + pinItURL + '" target="_blank"><img src="https://assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>';
-                return '<a class="btn-custom" href="' + pinItURL + '" target="_self" data-toggle="modal" data-target="#exampleModal">ENQUIRE NOW</a>';
-            }
-        },
+                    // Refer to https://developers.pinterest.com/pin_it/
+                    // pinItURL += '?url=' + 'http://dimsemenov.com/plugins/magnific-popup/';
+                    // pinItURL += '&media=' + item.el.attr('href');
+                    // pinItURL += '&description=' + caption;
 
 
-        gallery: {
-            enabled: true
-        },
-
-
-
-        callbacks: {
-            open: function () {
-                this.wrap.on('click.pinhandler', '.pin-it', function (e) {
-
-                    // This part of code doesn't work on CodePen, as it blocks window.open
-                    // Uncomment it on your production site, it opens a window via JavaScript, instead of new page
-                    /*window.open(e.currentTarget.href, "intent", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=550,height=420,left=" + (window.screen ? Math.round(screen.width / 2 - 275) : 50) + ",top=" + 100);
-          
-                    
-                    return false;*/
-                });
+                    // return caption + ' &middot; <a class="pin-it" href="' + pinItURL + '" target="_blank"><img src="https://assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>';
+                    return '<a class="btn-custom" href="' + pinItURL + '" target="_self" data-toggle="modal" data-target="#exampleModal">ENQUIRE NOW</a>';
+                }
             },
-            beforeClose: function () {
-                //this.wrap.off('click.pinhandler');
+
+
+            gallery: {
+                enabled: true
+            },
+
+
+
+            callbacks: {
+                open: function () {
+                    this.wrap.on('click.pinhandler', '.pin-it', function (e) {
+
+                        // This part of code doesn't work on CodePen, as it blocks window.open
+                        // Uncomment it on your production site, it opens a window via JavaScript, instead of new page
+                        /*window.open(e.currentTarget.href, "intent", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=550,height=420,left=" + (window.screen ? Math.round(screen.width / 2 - 275) : 50) + ",top=" + 100);
+              
+                        
+                        return false;*/
+                    });
+                    this.wrap.on('click.btn-custom', '.btn-custom',  function (){
+                        document.querySelector('button.btn-custom').click();
+                        document.querySelector('.mfp-close').click();
+                        console.log('clicked');
+                    });
+                },
+                beforeClose: function () {
+                    //this.wrap.off('click.pinhandler');
+                }
             }
-        }
 
-    });
-
+        });
 
 
-</script>
+
+    </script>
 </body>
 
 </html>

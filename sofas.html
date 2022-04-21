@@ -172,9 +172,13 @@
                                     <p>
                                         Sofas are the center of attraction of your living room. Turn your simple living
                                         room into a luxurious one with our finest sofa sets.
+                                        When buying sofa sets, there are a few factors like material, color, and size.
+                                        We provide a luxurious sofa with quality fabric. L-shaped, Wooden couches,
+                                        Leather & Leatherette sofa sets, Fabric patterns, Sofa cum beds, Recliner, and
+                                        Modular sofas are a few of the available options.
                                     </p>
                                 </div>
-                                <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-lg-12 text-center" style="display: none;" data-aos="fade-up" data-aos-duration="1000">
                                     <!-- <h3>Luxurious Sofas</h3>
                                     <div class="line"></div> -->
                                     <h5>
@@ -568,6 +572,11 @@
               
                         
                         return false;*/
+                    });
+                    this.wrap.on('click.btn-custom', '.btn-custom',  function (){
+                        document.querySelector('button.btn-custom').click();
+                        document.querySelector('.mfp-close').click();
+                        console.log('clicked');
                     });
                 },
                 beforeClose: function () {

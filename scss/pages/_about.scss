@@ -30,6 +30,7 @@
             height: auto;
             max-height: 500px;
             object-fit: cover;
+            opacity: 0.68;
         }
         h1{
             position: absolute;
@@ -101,7 +102,7 @@
 
     .brand-outer {
         width: 100%;
-        height: 650px;
+        height: 1050px;
         background-image: url("../img/brand.png");
         background-position: center top;
         background-size: cover;
@@ -138,7 +139,7 @@
     .brand-outer {
         background-size: contain !important;
         background-repeat: no-repeat !important;
-        height: 250px !important;
+        height: 450px !important;
     }
     .client-outer {
         background-size: contain !important;
@@ -148,6 +149,11 @@
 
     #cd_about {
         #cd_about_header {
+            .cd_header_image{
+                h1{
+                    font-size: 40px !important;
+                }
+            }
             nav {
                 button[aria-expanded="true"] {
                     margin: 12px 0px 0px;

@@ -13,7 +13,7 @@
             color: #fff;
         }
     }
-    #cd_project_gallery {
+    .cd_project_gallery {
         margin-top: 100px;
         
         .project-item {
@@ -21,6 +21,10 @@
             
             h2{
                 font-family: "heading-font-1";
+            }
+            h4{
+                font-size: 2rem;
+                color: #eab83b;
             }
             h5{
                 text-transform: inherit !important;
@@ -53,10 +57,10 @@
     }
 }
 @media only screen and (max-width: 426px) {
-    #cd_project #cd_project_gallery .project-item .project-item-img-1, 
-    #cd_project #cd_project_gallery .project-item .project-item-img-4, 
-    #cd_project #cd_project_gallery .project-item .project-item-img-3, 
-    #cd_project #cd_project_gallery .project-item .project-item-img-2 {
+    #cd_project .cd_project_gallery .project-item .project-item-img-1, 
+    #cd_project .cd_project_gallery .project-item .project-item-img-4, 
+    #cd_project .cd_project_gallery .project-item .project-item-img-3, 
+    #cd_project .cd_project_gallery .project-item .project-item-img-2 {
         height: 200px !important;
     }
     .btn-custom {
@@ -86,7 +90,7 @@
     }
 }
     }
-    #cd_project_gallery{
+    .cd_project_gallery{
         .project-item{
             
             h3{
