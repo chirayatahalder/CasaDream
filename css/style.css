@@ -3184,6 +3184,7 @@ h1 {
 #cd_collection #cd_project_gallery .project-item .collection-img .collection-img-item img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 @media only screen and (max-width: 426px) {
