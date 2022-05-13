@@ -456,6 +456,9 @@ footer {
 }
 
 @media only screen and (max-width: 426px) {
+    .c-rev{
+        flex-direction: column-reverse;
+    }
     #cd_home_words {
 
         .overlay {

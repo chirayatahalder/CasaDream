@@ -811,6 +811,13 @@ footer .navbar-brand img {
   }
 }
 @media only screen and (max-width: 426px) {
+  .c-rev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
   #cd_home_words .overlay {
     display: block;
     position: absolute;
