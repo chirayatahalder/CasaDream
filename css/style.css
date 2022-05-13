@@ -551,7 +551,7 @@ h1 {
 }
 #cd_home_video iframe {
   width: 100%;
-  height: 600px;
+  height: 800px;
 }
 #cd_home_video video {
   width: 100%;
@@ -874,7 +874,7 @@ footer .navbar-brand img {
   }
   #cd_home_video iframe {
     width: 100%;
-    height: 220px;
+    height: 240px;
   }
   #cd_home_video video {
     width: 100%;
